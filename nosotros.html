@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Salvador Ángel García | Cirugía Plástica Estética</title>
+    <title>El Doctor | Dr. Salvador Ángel García | Cirugía Plástica Estética</title>
     <!-- Fonts: Cormorant Garamond & Playfair Display & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +23,30 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+            border-left: 1px solid #dee2e6;
+            margin-left: 1rem;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 6px;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: #222;
+        }
+
+        .timeline-item:last-child {
+            border-left: 1px transparent;
+        }
+    </style>
 </head>
 
 <body>
@@ -104,8 +128,8 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav gap-3 gap-lg-4 mt-3 mt-lg-0 text-center text-lg-start align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase tracking-wider small link-clean" href="nosotros.html">EL
-                            DOCTOR</a>
+                        <a class="nav-link text-uppercase tracking-wider small link-clean fw-medium"
+                            href="nosotros.html">EL DOCTOR</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-uppercase tracking-wider small link-clean" href="cirugias-faciales.html"
@@ -173,228 +197,183 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section d-flex align-items-center" id="inicio">
-        <!-- Hero Background using the requested link (thumbnail version for image load support) -->
-        <div class="hero-bg" style="background-image: url('images/modelo-1.jpg');">
+    <!-- Hero Section (Banner Interno) -->
+    <section class="hero-section d-flex align-items-center" style="min-height: 60vh; padding-top: 100px;">
+        <div class="position-absolute w-100 h-100 top-0 start-0"
+            style="background-image: url('images/oficina.jpg'); background-size: cover; background-position: center;">
         </div>
-        <div class="overlay"></div>
+        <div class="overlay" style="background: rgba(0,0,0,0.5);"></div>
         <div class="container position-relative text-center gs-fade-up">
-            <h1 class="hero-title display-1 mb-4">Cirugía Plástica Estética</h1>
-            <p class="hero-subtitle lead mx-auto">
-                Cirugía plástica de la más alta calidad e innovadores tratamientos. Aumenta tu calidad de vida y tu
-                autoestima con resultados increíbles, totalmente a tu alcance.
+            <h1 class="display-3 mb-3 text-white brand-font">Nuestra Filosofía</h1>
+            <p class="lead text-white mx-auto fw-light" style="max-width: 600px; font-family: 'Inter', sans-serif;">
+                Arte, ciencia y experiencia al servicio de tu verdadera esencia.
             </p>
         </div>
     </section>
 
-    <!-- Doctor Profile Section -->
-    <section class="profile-section py-5" id="perfil">
+    <!-- Sección 1: Filosofía (Split Layout) -->
+    <section class="py-5 py-lg-6 bg-white">
+        <div class="container py-5 gs-fade-up">
+            <div class="row align-items-center gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+                    <p class="text-uppercase tracking-wider small text-muted mb-2 font-inter">Acerca de nosotros</p>
+                    <h2 class="display-5 mb-4 brand-font text-dark pb-2">La Belleza en su Estado Más Puro</h2>
+                    <div class="font-inter text-muted fw-light leading-relaxed">
+                        <p class="mb-4">
+                            Con el alma de un artista y la visión de un filósofo, el Dr. Salvador Ángel ha redefinido la
+                            práctica de la cirugía estética. Su perspectiva única le ha permitido crear técnicas
+                            innovadoras donde la ciencia médica se convierte en el medio para alcanzar la auténtica
+                            belleza natural.
+                        </p>
+                        <p class="mb-4">
+                            <strong>"Sutil pero profundo"</strong> es como él describe su arte. Cada procedimiento es
+                            diseñado a medida, cuidando al máximo la seguridad y acortando los tiempos de recuperación,
+                            para lograr cambios impactantes que celebran —y nunca ocultan— la verdadera identidad de
+                            quien los lleva.
+                        </p>
+                        <p class="mb-4">
+                            Su convicción no es fabricar belleza artificial, sino descubrir la luz y la armonía que ya
+                            existen en cada persona. Este es el pilar fundamental de su práctica.
+                        </p>
+                        <p class="mb-0">
+                            Gracias a este enfoque profundamente humano y minucioso, el Dr. Salvador se ha convertido en
+                            la elección de quienes buscan evolucionar estéticamente sin perder su esencia. Reconocido
+                            internacionalmente por su excelencia, es un maestro de la cirugía plástica y reconstructiva,
+                            dedicado a brindar resultados que simplemente lucen y se sienten como tú.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/perfil-doctor.jpg" alt="Retrato del Doctor" class="img-fluid w-100 shadow-sm"
+                        style="object-fit: cover; aspect-ratio: 4/5;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: El Equipo y Compromiso -->
+    <section class="py-5" style="background-color: #fcfcfc;">
+        <div class="container py-5 gs-fade-up">
+            <div class="row g-5">
+                <div class="col-lg-6 px-4">
+                    <div class="p-4 p-lg-5 bg-white shadow-sm h-100">
+                        <h3 class="brand-font mb-4 fs-3">Nuestro Equipo</h3>
+                        <p class="font-inter text-muted fw-light leading-relaxed mb-0">
+                            Detrás de cada resultado excepcional, existe un equipo humano profundamente dedicado y
+                            compasivo. Cada miembro de nuestro staff ha sido cuidadosamente seleccionado para brindarte
+                            una atención de primera clase, basada en la confianza, el respeto y la discreción. Desde tu
+                            primera consulta, tendrás la certeza de estar en las manos más expertas y experimentadas.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-4">
+                    <div class="p-4 p-lg-5 bg-white shadow-sm h-100">
+                        <h3 class="brand-font mb-4 fs-3">Conoce al Dr. Salvador Ángel</h3>
+                        <p class="font-inter text-muted fw-light leading-relaxed mb-0">
+                            Entendemos que la decisión de transformar tu cuerpo es profundamente personal. Por ello, el
+                            Dr. Salvador te integra en cada etapa del proceso, ofreciendo una perspectiva honesta y
+                            profesional para ayudarte a dar el paso correcto hacia tu futuro. Nuestro máximo compromiso
+                            es brindarte una experiencia de atención inigualable; un estándar de exclusividad y cuidado
+                            que se refleja en la satisfacción absoluta de cada paciente que nos visita.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Trayectoria -->
+    <section class="py-5 py-lg-6 bg-white">
         <div class="container py-5">
-            <div class="row justify-content-center text-center gs-fade-up">
+            <div class="row justify-content-center text-center mb-5 gs-fade-up">
                 <div class="col-lg-8">
-                    <h2 class="section-title mb-4">Conoce al Dr. Salvador Ángel García</h2>
-                    <p class="section-text">
-                        El Dr. Salvador Ángel García es Doctor en Cirugía Plástica Estética y Reconstructiva, cuenta con
-                        una impecable formación académica y una amplia trayectoria y experiencia nacional e
-                        internacional. Está certificado por la Asociación Mexicana de Cirugía Plástica Estética y
-                        Reconstructiva. (AMCPER) a partir del 2008, y es miembro del Colegio del Noreste de Cirugía
-                        Plástica, Estética y Reconstructiva.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Procedures Accordion Section -->
-    <section class="services-accordion-section bg-off-white" id="procedimientos">
-        <h2 class="section-title text-center mb-5 pt-5 gs-fade-up">Cirugía plástica estética y cirugía reconstructiva
-        </h2>
-
-        <div class="services-accordion gs-fade-up">
-            <!-- Panel 1 -->
-            <div class="accordion-panel" style="background-image: url('images/aumentodebusto.png');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">AUMENTO DE BUSTO</h3>
-            </div>
-            <!-- Panel 2 -->
-            <div class="accordion-panel" style="background-image: url('images/liposuccion.png');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">LIPOSUCCION</h3>
-            </div>
-            <!-- Panel 3 -->
-            <div class="accordion-panel" style="background-image: url('images/rinoplastia.png');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">RINOPLASTIA</h3>
-            </div>
-            <!-- Panel 4 -->
-            <div class="accordion-panel" style="background-image: url('images/abdinoplastia.png');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">ABDINOMPLASTIA</h3>
-            </div>
-            <!-- Panel 5 -->
-            <div class="accordion-panel" style="background-image: url('images/bichectomia.png');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">BICHECTOMIA</h3>
-            </div>
-        </div>
-
-        <div class="container pb-5">
-            <div class="text-center mt-5 gs-fade-up">
-                <p class="mb-3 tracking-wide text-uppercase small">Conoce más sobre nuestros procedimientos:</p>
-                <div class="procedure-links d-flex justify-content-center flex-wrap gap-4">
-                    <a href="#" class="minimal-link">Bichectomía</a>
-                    <a href="#" class="minimal-link">Abdominoplastia</a>
-                    <a href="#" class="minimal-link">Rinoplastia</a>
-                    <a href="#" class="minimal-link">Liposucción</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Specific Procedure Section (Aumento de Busto) -->
-    <section class="specific-procedure py-5" id="aumento-busto">
-        <div class="container py-5 gs-fade-up">
-            <div class="row align-items-center gx-5">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <div class="procedure-image-wrapper position-relative">
-                        <!-- Decorative square behind image for luxury feel -->
-                        <div class="decorative-square position-absolute bg-off-white w-100 h-100 top-0 start-0 translate-middle-x ms-2 mt-4"
-                            style="z-index: 1;"></div>
-                        <img src="https://image.shutterstock.com/image-photo/cropped-view-passionate-girl-big-600nw-1695414118.jpg"
-                            alt="Aumento de busto detallado" class="img-fluid position-relative shadow-sm"
-                            style="z-index: 2; object-fit: cover; width: 100%; aspect-ratio: 4/5;">
+                    <h2 class="display-4 brand-font mb-3">Dr. Salvador Ángel García</h2>
+                    <p class="text-uppercase tracking-wider font-inter small text-dark mb-4">Formación académica y
+                        profesional</p>
+                    <div class="d-inline-block px-4 py-2 border border-light bg-light font-inter small text-muted">
+                        R.S. CP 2894311 UANL &nbsp;|&nbsp; CE 4997503 UANL &nbsp;|&nbsp; Cirugía plástica y
+                        reconstructiva
                     </div>
                 </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <p class="text-uppercase tracking-wider small text-muted mb-2">Procedimientos Estrella</p>
-                    <h2 class="section-title mb-4" style="padding-bottom: 1rem;">Aumento de Busto</h2>
-                    <p class="section-text ms-0 text-start mb-4">
-                        La cirugía de aumento de busto consiste en agrandar el tamaño del busto (senos) por medio de
-                        prótesis, lo que mejora también el contorno y la figura mamaria, y se realiza de manera
-                        proporcional a la estatura, complexión, y el tamaño de la espalda y la cadera de la paciente.
-                    </p>
-                    <p class="section-text ms-0 text-start mb-4">
-                        Nuestro enfoque es siempre buscar resultados naturales y armoniosos, utilizando los implantes de
-                        la más alta calidad y las técnicas quirúrgicas más avanzadas y seguras para garantizar no solo
-                        el volumen deseado, sino la textura, caída y simetría perfectas.
-                    </p>
-                    <a href="#contacto"
-                        class="btn btn-outline-dark rounded-0 px-4 py-3 text-uppercase tracking-wider mt-2">Agendar
-                        Valoración</a>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Procedimientos No Quirúrgicos Section -->
-    <section id="no-quirurgicos" class="py-5 py-lg-6 bg-white">
-        <div class="container py-5 gs-fade-up">
-            <div class="row align-items-center gx-5">
-                <!-- Columna Izquierda (Texto) -->
-                <div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0 text-start">
-                    <h2 class="section-title mb-4">Procedimientos no quirúrgicos</h2>
-                    <p class="section-text fw-light ms-0 mb-4" style="font-family: 'Inter', sans-serif;">
-                        Realza tu belleza con procedimientos no quirúrgicos. Diseñados para hacer un cambio en la
-                        apariencia física de forma más sutil, mejorar resultados tras una cirugía plástica, o minimizar
-                        el tiempo de recuperación de forma segura y eficaz.
-                    </p>
-                    <ul class="list-unstyled mb-2">
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Toxina Botulínica</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Rellenos Faciales</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Plasma Rico en
-                            Plaquetas</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Peeling Químico</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Sudoración Excesiva
-                            (Hiperhidrosis)</li>
-                    </ul>
-                    <a href="procedimientos-no-quirurgicos.html"
-                        class="btn btn-dark rounded-0 text-uppercase tracking-wider mt-4">Ver todos los tratamientos</a>
-                </div>
-
-                <!-- Columna Derecha (Imagen) -->
-                <div class="col-lg-6">
-                    <img src="images/procedimientos-no-quirurgicos.png" alt="Procedimientos no quirúrgicos"
-                        class="img-fluid w-100 shadow-sm" style="object-fit: cover; aspect-ratio: 4/5;">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section py-5 text-center text-white" id="cta">
-        <div class="container py-5 gs-fade-up">
-            <h2 class="display-5 cta-title">¿Quieres mejorar tu apariencia física y calidad de vida?</h2>
-            <a href="#contacto"
-                class="btn btn-outline-light btn-lg mt-4 px-5 py-3 rounded-0 text-uppercase tracking-wider">Agendar
-                Cita</a>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section" id="testimoniales">
-        <div class="container-fluid p-0">
-            <div class="row g-0 align-items-center">
-                <!-- Left Image Cover -->
-                <div class="col-lg-6">
-                    <div class="testimonial-img-wrapper gs-fade-up h-100">
-                        <img src="images/perfil-doctor.jpg" alt="Doctor en consultorio" class="img-fluid w-100"
-                            style="object-fit: cover; min-height: 600px; height: 100%; max-height: 800px;">
-                    </div>
-                </div>
-                <!-- Right Content -->
-                <div class="col-lg-6 bg-white">
-                    <div class="testimonial-content-wrapper p-5 p-lg-5 mx-lg-5 gs-fade-up">
-                        <p class="text-uppercase tracking-wider small text-muted mb-2 fw-semibold">Lo que dicen nuestros
-                            pacientes</p>
-                        <h2 class="display-3 brand-font text-uppercase mb-5 text-dark" style="letter-spacing: 2px;">
-                            Testimoniales</h2>
-
-                        <!-- Testimonials Swiper -->
-                        <div class="swiper testimonials-swiper mb-5">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide pe-4">
-                                    <p class="fs-5 fst-italic text-dark mb-4 leading-relaxed" style="opacity: 0.85;">
-                                        "Me siento muy afortunada de haber encontrado al Dr. Salvador... es un diamante
-                                        en bruto, un cirujano excepcional."
-                                    </p>
-                                    <p class="text-uppercase fw-bold small text-dark tracking-wide mt-4">— Paciente
-                                        Satisfecha</p>
-                                </div>
-                                <div class="swiper-slide pe-4">
-                                    <p class="fs-5 fst-italic text-dark mb-4 leading-relaxed" style="opacity: 0.85;">
-                                        "El cambio en mi calidad de vida ha sido increíble. Gracias al doctor y a todo
-                                        su equipo por su gran atención."
-                                    </p>
-                                    <p class="text-uppercase fw-bold small text-dark tracking-wide mt-4">— Paciente
-                                        Satisfecha</p>
-                                </div>
-                                <div class="swiper-slide pe-4">
-                                    <p class="fs-5 fst-italic text-dark mb-4 leading-relaxed" style="opacity: 0.85;">
-                                        "Excelente atención desde la primera consulta, resolvió todas mis dudas y el
-                                        resultado final superó mis expectativas."
-                                    </p>
-                                    <p class="text-uppercase fw-bold small text-dark tracking-wide mt-4">— Paciente
-                                        Satisfecha</p>
-                                </div>
-                            </div>
-                            <!-- Swiper Pagination -->
-                            <div
-                                class="swiper-pagination testimonials-pagination mt-5 position-static d-flex justify-content-start align-items-center gap-2">
-                            </div>
+            <div class="row justify-content-center gs-fade-up">
+                <div class="col-lg-8">
+                    <div class="timeline-container px-3 px-md-5 font-inter fw-light">
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">1991-1997</span>
+                            <span class="text-muted">Facultad de Medicina de la UANL (Monterrey, NL. México).</span>
                         </div>
-
-                        <a href="#contacto"
-                            class="btn btn-dark rounded-0 px-5 py-3 text-uppercase tracking-wider border-0 shadow-sm mt-3"
-                            style="background-color: #000; font-size: 0.8rem;">Ver Todos</a>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">1997-1998</span>
+                            <span class="text-muted">Servicio Social, Villaldama NL.</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">1998</span>
+                            <span class="text-muted">Carta al mérito por excelencia en servicio social por SSNL.</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">1999-2003</span>
+                            <span class="text-muted">Hospital Universitario UANL (Monterrey, NL, México).</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">2002</span>
+                            <span class="text-muted">Carta de excelencia académica en Cirugía General.</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">2002-2003</span>
+                            <span class="text-muted">Jefe de Residentes Cirugía General.</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">2003</span>
+                            <span class="text-muted">Rotación Hospital Parkland (Dallas, Texas, EUA).</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">2004</span>
+                            <span class="text-muted">Rotación Hospital Gea González (Ciudad de México).</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">2005</span>
+                            <span class="text-muted">Rotación en Hospital ICR (Guadalajara, Jalisco).</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">2005-2006</span>
+                            <span class="text-muted">Jefe de Residentes de Cirugía Plástica (No. De Certificado
+                                1308).</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">2008</span>
+                            <span class="text-muted">Fellow Cirugía Estética (6 meses) con Daniel C. Mills, MD (Laguna
+                                Beach, California, EUA).</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="fw-medium text-dark d-block mb-1">Certificaciones</span>
+                            <span class="text-muted">Miembro de AMCPER a partir del 2008. Miembro del Colegio del
+                                Noreste de Cirugía Plástica, Estética y Reconstructiva.</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Sección CTA (Frase Inspiradora) -->
+    <section class="py-5"
+        style="padding-top: 6rem !important; padding-bottom: 6rem !important; background-color: #fafafa;">
+        <div class="container text-center gs-fade-up">
+            <h2 class="display-6 brand-font fst-italic text-dark mb-5 lh-base mx-auto"
+                style="max-width: 800px; line-height: 1.4 !important; opacity: 0.9;">
+                "La verdadera belleza no se fabrica, se descubre. Deja que nuestra maestría revele tu esencia más
+                auténtica."
+            </h2>
+            <a href="#contacto"
+                class="btn btn-dark rounded-0 px-5 py-3 text-uppercase tracking-wider font-inter text-white">AGENDAR
+                CITA</a>
         </div>
     </section>
 
     <!-- Contact & Footer Section -->
-    <section class="contact-section py-5" id="contacto">
+    <section class="contact-section py-5 bg-white" id="contacto">
         <div class="container py-5 gs-fade-up">
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0">

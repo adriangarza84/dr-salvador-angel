@@ -4,25 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Salvador Ángel García | Cirugía Plástica Estética</title>
-    <!-- Fonts: Cormorant Garamond & Playfair Display & Inter -->
+    <title>Cirugías Corporales | Dr. Salvador Ángel García | Cirugía Plástica Estética</title>
+    <!-- Fonts: Cormorant Garamond & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <!-- Lenis CSS -->
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .service-card {
+            border: none;
+            transition: all 0.3s ease;
+            background-color: transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05) !important;
+        }
+
+        .service-card img {
+            transition: transform 0.5s ease;
+        }
+
+        .service-card:hover img {
+            transform: scale(1.03);
+        }
+
+        .img-wrapper {
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
@@ -125,7 +147,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link text-uppercase tracking-wider small link-clean"
+                        <a class="nav-link text-uppercase tracking-wider small link-clean fw-medium text-dark"
                             href="cirugias-corporales.html" id="navbarDropdownCorporal" role="button"
                             aria-expanded="false">CORPORAL</a>
                         <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
@@ -173,228 +195,197 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section d-flex align-items-center" id="inicio">
-        <!-- Hero Background using the requested link (thumbnail version for image load support) -->
-        <div class="hero-bg" style="background-image: url('images/modelo-1.jpg');">
+    <!-- Hero Section (Banner Interno) -->
+    <section class="hero-section d-flex align-items-center" style="min-height: 60vh; padding-top: 100px;">
+        <div class="position-absolute w-100 h-100 top-0 start-0"
+            style="background-image: url('https://picsum.photos/id/1053/1920/600'); background-size: cover; background-position: center;">
         </div>
-        <div class="overlay"></div>
+        <div class="overlay" style="background: rgba(0,0,0,0.5);"></div>
         <div class="container position-relative text-center gs-fade-up">
-            <h1 class="hero-title display-1 mb-4">Cirugía Plástica Estética</h1>
-            <p class="hero-subtitle lead mx-auto">
-                Cirugía plástica de la más alta calidad e innovadores tratamientos. Aumenta tu calidad de vida y tu
-                autoestima con resultados increíbles, totalmente a tu alcance.
+            <h1 class="display-2 mb-3 text-white brand-font">Armonía Corporal</h1>
+            <p class="lead text-white mx-auto fw-light" style="max-width: 700px; font-family: 'Inter', sans-serif;">
+                Esculpiendo la belleza natural de tu silueta con maestría, proporción y elegancia absoluta.
             </p>
         </div>
     </section>
 
-    <!-- Doctor Profile Section -->
-    <section class="profile-section py-5" id="perfil">
-        <div class="container py-5">
-            <div class="row justify-content-center text-center gs-fade-up">
+    <!-- Sección 1: Introducción y Filosofía -->
+    <section class="py-5 py-lg-6 bg-white">
+        <div class="container py-5 gs-fade-up text-center">
+            <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="section-title mb-4">Conoce al Dr. Salvador Ángel García</h2>
-                    <p class="section-text">
-                        El Dr. Salvador Ángel García es Doctor en Cirugía Plástica Estética y Reconstructiva, cuenta con
-                        una impecable formación académica y una amplia trayectoria y experiencia nacional e
-                        internacional. Está certificado por la Asociación Mexicana de Cirugía Plástica Estética y
-                        Reconstructiva. (AMCPER) a partir del 2008, y es miembro del Colegio del Noreste de Cirugía
-                        Plástica, Estética y Reconstructiva.
+                    <p class="text-uppercase tracking-wider small text-muted mb-3 font-inter">Filosofía Quirúrgica</p>
+                    <h2 class="display-5 mb-4 brand-font text-dark pb-3">El Arte de la Proporción</h2>
+                    <p class="font-inter text-muted fw-light leading-relaxed fs-5">
+                        "Tu cuerpo es la máxima expresión de tu vitalidad y elegancia. El Dr. Salvador Ángel aborda la
+                        cirugía corporal con la precisión y la visión de un escultor plástico, buscando siempre realzar
+                        tus curvas naturales y restaurar la armonía de tu silueta. Entendemos que cada cuerpo tiene una
+                        arquitectura única; por ello, nuestros procedimientos están diseñados a medida para refinar tus
+                        líneas, devolver la firmeza y proyectar la versión más sofisticada y segura de ti misma."
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Procedures Accordion Section -->
-    <section class="services-accordion-section bg-off-white" id="procedimientos">
-        <h2 class="section-title text-center mb-5 pt-5 gs-fade-up">Cirugía plástica estética y cirugía reconstructiva
-        </h2>
+    <!-- Sección 2: Procedimientos (Grid de Tarjetas de Lujo) -->
+    <section class="py-5 bg-off-white" style="background-color: #fcfcfc;">
+        <div class="container py-5">
+            <div class="row g-5 justify-content-center">
 
-        <div class="services-accordion gs-fade-up">
-            <!-- Panel 1 -->
-            <div class="accordion-panel" style="background-image: url('images/aumentodebusto.png');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">AUMENTO DE BUSTO</h3>
-            </div>
-            <!-- Panel 2 -->
-            <div class="accordion-panel" style="background-image: url('images/liposuccion.png');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">LIPOSUCCION</h3>
-            </div>
-            <!-- Panel 3 -->
-            <div class="accordion-panel" style="background-image: url('images/rinoplastia.png');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">RINOPLASTIA</h3>
-            </div>
-            <!-- Panel 4 -->
-            <div class="accordion-panel" style="background-image: url('images/abdinoplastia.png');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">ABDINOMPLASTIA</h3>
-            </div>
-            <!-- Panel 5 -->
-            <div class="accordion-panel" style="background-image: url('images/bichectomia.png');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">BICHECTOMIA</h3>
-            </div>
-        </div>
-
-        <div class="container pb-5">
-            <div class="text-center mt-5 gs-fade-up">
-                <p class="mb-3 tracking-wide text-uppercase small">Conoce más sobre nuestros procedimientos:</p>
-                <div class="procedure-links d-flex justify-content-center flex-wrap gap-4">
-                    <a href="#" class="minimal-link">Bichectomía</a>
-                    <a href="#" class="minimal-link">Abdominoplastia</a>
-                    <a href="#" class="minimal-link">Rinoplastia</a>
-                    <a href="#" class="minimal-link">Liposucción</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Specific Procedure Section (Aumento de Busto) -->
-    <section class="specific-procedure py-5" id="aumento-busto">
-        <div class="container py-5 gs-fade-up">
-            <div class="row align-items-center gx-5">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <div class="procedure-image-wrapper position-relative">
-                        <!-- Decorative square behind image for luxury feel -->
-                        <div class="decorative-square position-absolute bg-off-white w-100 h-100 top-0 start-0 translate-middle-x ms-2 mt-4"
-                            style="z-index: 1;"></div>
-                        <img src="https://image.shutterstock.com/image-photo/cropped-view-passionate-girl-big-600nw-1695414118.jpg"
-                            alt="Aumento de busto detallado" class="img-fluid position-relative shadow-sm"
-                            style="z-index: 2; object-fit: cover; width: 100%; aspect-ratio: 4/5;">
-                    </div>
-                </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <p class="text-uppercase tracking-wider small text-muted mb-2">Procedimientos Estrella</p>
-                    <h2 class="section-title mb-4" style="padding-bottom: 1rem;">Aumento de Busto</h2>
-                    <p class="section-text ms-0 text-start mb-4">
-                        La cirugía de aumento de busto consiste en agrandar el tamaño del busto (senos) por medio de
-                        prótesis, lo que mejora también el contorno y la figura mamaria, y se realiza de manera
-                        proporcional a la estatura, complexión, y el tamaño de la espalda y la cadera de la paciente.
-                    </p>
-                    <p class="section-text ms-0 text-start mb-4">
-                        Nuestro enfoque es siempre buscar resultados naturales y armoniosos, utilizando los implantes de
-                        la más alta calidad y las técnicas quirúrgicas más avanzadas y seguras para garantizar no solo
-                        el volumen deseado, sino la textura, caída y simetría perfectas.
-                    </p>
-                    <a href="#contacto"
-                        class="btn btn-outline-dark rounded-0 px-4 py-3 text-uppercase tracking-wider mt-2">Agendar
-                        Valoración</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Procedimientos No Quirúrgicos Section -->
-    <section id="no-quirurgicos" class="py-5 py-lg-6 bg-white">
-        <div class="container py-5 gs-fade-up">
-            <div class="row align-items-center gx-5">
-                <!-- Columna Izquierda (Texto) -->
-                <div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0 text-start">
-                    <h2 class="section-title mb-4">Procedimientos no quirúrgicos</h2>
-                    <p class="section-text fw-light ms-0 mb-4" style="font-family: 'Inter', sans-serif;">
-                        Realza tu belleza con procedimientos no quirúrgicos. Diseñados para hacer un cambio en la
-                        apariencia física de forma más sutil, mejorar resultados tras una cirugía plástica, o minimizar
-                        el tiempo de recuperación de forma segura y eficaz.
-                    </p>
-                    <ul class="list-unstyled mb-2">
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Toxina Botulínica</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Rellenos Faciales</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Plasma Rico en
-                            Plaquetas</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Peeling Químico</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Sudoración Excesiva
-                            (Hiperhidrosis)</li>
-                    </ul>
-                    <a href="procedimientos-no-quirurgicos.html"
-                        class="btn btn-dark rounded-0 text-uppercase tracking-wider mt-4">Ver todos los tratamientos</a>
-                </div>
-
-                <!-- Columna Derecha (Imagen) -->
-                <div class="col-lg-6">
-                    <img src="images/procedimientos-no-quirurgicos.png" alt="Procedimientos no quirúrgicos"
-                        class="img-fluid w-100 shadow-sm" style="object-fit: cover; aspect-ratio: 4/5;">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section py-5 text-center text-white" id="cta">
-        <div class="container py-5 gs-fade-up">
-            <h2 class="display-5 cta-title">¿Quieres mejorar tu apariencia física y calidad de vida?</h2>
-            <a href="#contacto"
-                class="btn btn-outline-light btn-lg mt-4 px-5 py-3 rounded-0 text-uppercase tracking-wider">Agendar
-                Cita</a>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section" id="testimoniales">
-        <div class="container-fluid p-0">
-            <div class="row g-0 align-items-center">
-                <!-- Left Image Cover -->
-                <div class="col-lg-6">
-                    <div class="testimonial-img-wrapper gs-fade-up h-100">
-                        <img src="images/perfil-doctor.jpg" alt="Doctor en consultorio" class="img-fluid w-100"
-                            style="object-fit: cover; min-height: 600px; height: 100%; max-height: 800px;">
-                    </div>
-                </div>
-                <!-- Right Content -->
-                <div class="col-lg-6 bg-white">
-                    <div class="testimonial-content-wrapper p-5 p-lg-5 mx-lg-5 gs-fade-up">
-                        <p class="text-uppercase tracking-wider small text-muted mb-2 fw-semibold">Lo que dicen nuestros
-                            pacientes</p>
-                        <h2 class="display-3 brand-font text-uppercase mb-5 text-dark" style="letter-spacing: 2px;">
-                            Testimoniales</h2>
-
-                        <!-- Testimonials Swiper -->
-                        <div class="swiper testimonials-swiper mb-5">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide pe-4">
-                                    <p class="fs-5 fst-italic text-dark mb-4 leading-relaxed" style="opacity: 0.85;">
-                                        "Me siento muy afortunada de haber encontrado al Dr. Salvador... es un diamante
-                                        en bruto, un cirujano excepcional."
-                                    </p>
-                                    <p class="text-uppercase fw-bold small text-dark tracking-wide mt-4">— Paciente
-                                        Satisfecha</p>
-                                </div>
-                                <div class="swiper-slide pe-4">
-                                    <p class="fs-5 fst-italic text-dark mb-4 leading-relaxed" style="opacity: 0.85;">
-                                        "El cambio en mi calidad de vida ha sido increíble. Gracias al doctor y a todo
-                                        su equipo por su gran atención."
-                                    </p>
-                                    <p class="text-uppercase fw-bold small text-dark tracking-wide mt-4">— Paciente
-                                        Satisfecha</p>
-                                </div>
-                                <div class="swiper-slide pe-4">
-                                    <p class="fs-5 fst-italic text-dark mb-4 leading-relaxed" style="opacity: 0.85;">
-                                        "Excelente atención desde la primera consulta, resolvió todas mis dudas y el
-                                        resultado final superó mis expectativas."
-                                    </p>
-                                    <p class="text-uppercase fw-bold small text-dark tracking-wide mt-4">— Paciente
-                                        Satisfecha</p>
-                                </div>
+                <!-- Tarjeta 1: Aumento de Busto -->
+                <div class="col-md-6 col-lg-4 gs-fade-up">
+                    <div class="card service-card h-100 border-0">
+                        <a href="aumento-de-busto.html" class="text-decoration-none text-dark">
+                            <div class="img-wrapper">
+                                <img src="https://picsum.photos/id/1027/600/400" class="card-img-top rounded-0"
+                                    alt="Aumento de Busto" style="object-fit: cover; aspect-ratio: 3/2;">
                             </div>
-                            <!-- Swiper Pagination -->
-                            <div
-                                class="swiper-pagination testimonials-pagination mt-5 position-static d-flex justify-content-start align-items-center gap-2">
+                            <div class="card-body pt-4 px-0 pb-0">
+                                <h4 class="brand-font mb-3 fs-3">Aumento de Busto</h4>
+                                <p class="card-text font-inter text-muted fw-light text-sm mb-4">
+                                    Redefinimos la feminidad con resultados sutiles, elegantes y proporcionados.
+                                    Utilizamos implantes de la más alta calidad para una sensación, movimiento y
+                                    apariencia completamente natural.
+                                </p>
+                                <span
+                                    class="text-uppercase tracking-wider small fw-medium font-inter border-bottom border-dark pb-1 text-dark">Conocer
+                                    más</span>
                             </div>
-                        </div>
-
-                        <a href="#contacto"
-                            class="btn btn-dark rounded-0 px-5 py-3 text-uppercase tracking-wider border-0 shadow-sm mt-3"
-                            style="background-color: #000; font-size: 0.8rem;">Ver Todos</a>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Tarjeta 2: Lipoescultura -->
+                <div class="col-md-6 col-lg-4 gs-fade-up" style="transition-delay: 0.1s;">
+                    <div class="card service-card h-100 border-0">
+                        <a href="liposuccion.html" class="text-decoration-none text-dark">
+                            <div class="img-wrapper">
+                                <img src="https://picsum.photos/id/1012/600/400" class="card-img-top rounded-0"
+                                    alt="Lipoescultura" style="object-fit: cover; aspect-ratio: 3/2;">
+                            </div>
+                            <div class="card-body pt-4 px-0 pb-0">
+                                <h4 class="brand-font mb-3 fs-3">Lipoescultura</h4>
+                                <p class="card-text font-inter text-muted fw-light text-sm mb-4">
+                                    Moldeamos tu figura extrayendo estratégicamente los depósitos de grasa rebeldes.
+                                    Revelamos líneas suaves, un abdomen definido y una silueta sofisticada con
+                                    transiciones perfectas.
+                                </p>
+                                <span
+                                    class="text-uppercase tracking-wider small fw-medium font-inter border-bottom border-dark pb-1 text-dark">Conocer
+                                    más</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Abdominoplastia -->
+                <div class="col-md-6 col-lg-4 gs-fade-up" style="transition-delay: 0.2s;">
+                    <div class="card service-card h-100 border-0">
+                        <a href="abdominosplastia.html" class="text-decoration-none text-dark">
+                            <div class="img-wrapper">
+                                <img src="https://picsum.photos/id/1062/600/400" class="card-img-top rounded-0"
+                                    alt="Abdominoplastia" style="object-fit: cover; aspect-ratio: 3/2;">
+                            </div>
+                            <div class="card-body pt-4 px-0 pb-0">
+                                <h4 class="brand-font mb-3 fs-3">Abdominoplastia <span
+                                        class="d-block fs-5 text-muted fst-italic mt-1">(Lipectomía)</span></h4>
+                                <p class="card-text font-inter text-muted fw-light text-sm mb-4">
+                                    Restauramos la firmeza de tu torso. Eliminamos el exceso de piel y tensamos la
+                                    musculatura abdominal para devolverte un perfil liso, tonificado y juvenil.
+                                </p>
+                                <span
+                                    class="text-uppercase tracking-wider small fw-medium font-inter border-bottom border-dark pb-1 text-dark">Conocer
+                                    más</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Contorno Glúteo -->
+                <div class="col-md-6 col-lg-4 gs-fade-up" style="transition-delay: 0.1s;">
+                    <div class="card service-card h-100 border-0">
+                        <a href="levantamiento-de-gluteos.html" class="text-decoration-none text-dark">
+                            <div class="img-wrapper">
+                                <img src="https://picsum.photos/id/1011/600/400" class="card-img-top rounded-0"
+                                    alt="Contorno Glúteo" style="object-fit: cover; aspect-ratio: 3/2;">
+                            </div>
+                            <div class="card-body pt-4 px-0 pb-0">
+                                <h4 class="brand-font mb-3 fs-3">Contorno Glúteo</h4>
+                                <p class="card-text font-inter text-muted fw-light text-sm mb-4">
+                                    Realzamos la proyección y el volumen de manera equilibrada, esculpiendo curvas
+                                    hermosas que complementan armónicamente la arquitectura natural de tu cuerpo.
+                                </p>
+                                <span
+                                    class="text-uppercase tracking-wider small fw-medium font-inter border-bottom border-dark pb-1 text-dark">Conocer
+                                    más</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5: Mastopexia y Reducción -->
+                <div class="col-md-6 col-lg-4 gs-fade-up" style="transition-delay: 0.2s;">
+                    <div class="card service-card h-100 border-0">
+                        <a href="reduccion-de-busto.html" class="text-decoration-none text-dark">
+                            <div class="img-wrapper">
+                                <img src="https://picsum.photos/id/1066/600/400" class="card-img-top rounded-0"
+                                    alt="Mastopexia y Reducción" style="object-fit: cover; aspect-ratio: 3/2;">
+                            </div>
+                            <div class="card-body pt-4 px-0 pb-0">
+                                <h4 class="brand-font mb-3 fs-3">Mastopexia <span
+                                        class="d-block fs-5 text-muted fst-italic mt-1">y Reducción</span></h4>
+                                <p class="card-text font-inter text-muted fw-light text-sm mb-4">
+                                    Devolvemos la juventud, firmeza y ligereza a tu pecho. Creamos una forma
+                                    estéticamente hermosa y aliviamos la incomodidad física con resultados perdurables.
+                                </p>
+                                <span
+                                    class="text-uppercase tracking-wider small fw-medium font-inter border-bottom border-dark pb-1 text-dark">Conocer
+                                    más</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 6: Cirugía Post-Bariátrica -->
+                <div class="col-md-6 col-lg-4 gs-fade-up" style="transition-delay: 0.3s;">
+                    <div class="card service-card h-100 border-0">
+                        <a href="post-bariatrica.html" class="text-decoration-none text-dark">
+                            <div class="img-wrapper">
+                                <img src="https://picsum.photos/id/1035/600/400" class="card-img-top rounded-0"
+                                    alt="Cirugía Post-Bariátrica" style="object-fit: cover; aspect-ratio: 3/2;">
+                            </div>
+                            <div class="card-body pt-4 px-0 pb-0">
+                                <h4 class="brand-font mb-3 fs-3">Cirugía Post-Bariátrica</h4>
+                                <p class="card-text font-inter text-muted fw-light text-sm mb-4">
+                                    Un cierre triunfal a tu proceso de pérdida de peso. Eliminamos el excedente de piel
+                                    para revelar finalmente la figura estilizada por la que tanto has trabajado.
+                                </p>
+                                <span
+                                    class="text-uppercase tracking-wider small fw-medium font-inter border-bottom border-dark pb-1 text-dark">Conocer
+                                    más</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
             </div>
+        </div>
+    </section>
+
+    <!-- Sección CTA -->
+    <section class="py-5"
+        style="padding-top: 6rem !important; padding-bottom: 6rem !important; background-color: #fafafa;">
+        <div class="container text-center gs-fade-up">
+            <h2 class="display-6 brand-font fst-italic text-dark mx-auto"
+                style="max-width: 800px; line-height: 1.4 !important; opacity: 0.9;">
+                "Tu silueta es una obra de arte en constante evolución. Permítenos esculpir tu confianza."
+            </h2>
         </div>
     </section>
 
     <!-- Contact & Footer Section -->
-    <section class="contact-section py-5" id="contacto">
+    <section class="contact-section py-5 bg-white" id="contacto">
         <div class="container py-5 gs-fade-up">
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0">
@@ -467,9 +458,6 @@
 
     <!-- Lenis for Smooth Scroll -->
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- Custom App JS -->
     <script src="js/main.js"></script>
