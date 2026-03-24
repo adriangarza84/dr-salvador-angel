@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinoplastia | Dr. Salvador Ángel García | Cirugía Plástica Estética</title>
+    <title>Galería de Casos | Dr. Salvador Ángel García | Cirugía Plástica Estética</title>
     <!-- Fonts: Cormorant Garamond & Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +20,38 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .filter-link {
+            font-family: 'Inter', sans-serif;
+            color: #888;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .filter-link.active, .filter-link:hover {
+            color: #111;
+        }
+        .filter-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 1px;
+            background-color: #111;
+        }
+        .gallery-item {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- Header / Navbar (Clean Beauty Minimal) -->
-        <nav class="navbar navbar-expand-lg fixed-top gs-navbar backdrop-blur"
+    <nav class="navbar navbar-expand-lg fixed-top gs-navbar backdrop-blur"
         style="backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.95); transition: all 0.3s ease; border-bottom: 1px solid rgba(0,0,0,0.05);">
         <style>
             .link-clean {
@@ -110,12 +136,12 @@
                             DOCTOR</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link text-uppercase tracking-wider small link-clean fw-medium"
+                        <a class="nav-link text-uppercase tracking-wider small link-clean"
                             href="cirugias-faciales.html" id="navbarDropdownFacial" role="button"
                             aria-expanded="false">FACIAL</a>
                         <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
                             aria-labelledby="navbarDropdownFacial">
-                            <li><a class="dropdown-item dropdown-item-clean active" href="rinoplastia.html">Rinoplastia</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="rinoplastia.html">Rinoplastia</a></li>
                             <li><a class="dropdown-item dropdown-item-clean" href="bichectomia.html">Bichectomía</a></li>
                             <li><a class="dropdown-item dropdown-item-clean" href="blefaroplastia.html">Cirugía de Párpados / Blefaroplastia</a></li>
                             <li><a class="dropdown-item dropdown-item-clean" href="lifting-facial.html">Lifting Facial / Rejuvenecimiento</a></li>
@@ -153,7 +179,7 @@
                             href="financiamiento.html">FINANCIAMIENTO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase tracking-wider small link-clean"
+                        <a class="nav-link text-uppercase tracking-wider small link-clean active fw-medium"
                             href="galeria.html">GALERÍA</a>
                     </li>
                     <li class="nav-item">
@@ -168,227 +194,177 @@
     <!-- Hero Section (Banner Interno) -->
     <section class="hero-section d-flex align-items-center" style="min-height: 60vh; padding-top: 100px;">
         <div class="position-absolute w-100 h-100 top-0 start-0"
-            style="background-image: url('https://picsum.photos/id/1011/1920/600'); background-size: cover; background-position: center;">
+            style="background-image: url('https://picsum.photos/id/1053/1920/600'); background-size: cover; background-position: center;">
         </div>
         <div class="overlay" style="background: rgba(0,0,0,0.5);"></div>
         <div class="container position-relative text-center gs-fade-up">
-            <h1 class="display-2 mb-3 text-white brand-font">Rinoplastia</h1>
+            <h1 class="display-2 mb-3 text-white brand-font">Galería de Casos</h1>
             <p class="lead text-white mx-auto fw-light" style="max-width: 700px; font-family: 'Inter', sans-serif;">
-                La arquitectura de la elegancia facial. Proporciones perfectas, resultados inconfundiblemente naturales.
+                Transformaciones reales diseñadas con maestría, proporción y absoluta naturalidad.
             </p>
         </div>
     </section>
 
-    <!-- Sección 1: Filosofía del Procedimiento (Split Layout) -->
-    <section class="py-5 py-lg-6 bg-white">
-        <div class="container py-5 gs-fade-up">
-            <div class="row align-items-center gx-5">
-                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5 text-start">
-                    <p class="text-uppercase tracking-wider small text-muted mb-2 font-inter">Filosofía del
-                        Procedimiento</p>
-                    <h2 class="display-5 mb-4 brand-font text-dark pb-2">El Centro de tu Armonía</h2>
-                    <div class="font-inter text-muted fw-light leading-relaxed">
-                        <p class="mb-4 text-sm">
-                            La nariz no solo es el punto focal de tu rostro; es el pilar que sostiene el equilibrio de
-                            todas tus facciones. Para el Dr. Salvador Ángel, la rinoplastia es la forma más pura de
-                            escultura facial. Nuestro objetivo nunca es crear un perfil genérico o artificial, sino
-                            descubrir la forma exacta que ilumina tu mirada, resalta tus pómulos y complementa la línea
-                            de tus labios.
-                        </p>
-                        <p class="mb-0 text-sm">
-                            Mediante un enfoque meticuloso y profundamente artístico, rediseñamos las estructuras
-                            nasales para lograr una transición suave y elegante, asegurando que tu nueva imagen se
-                            sienta como la versión más refinada de ti misma.
-                        </p>
+    <!-- Sección 1: Filtros de Galería -->
+    <section class="bg-white pt-5 pb-4">
+        <div class="container gs-fade-up text-center">
+            <div class="d-flex justify-content-center flex-wrap gap-4 mt-3">
+                <span class="text-uppercase tracking-wider filter-link active" data-filter="all">TODOS</span>
+                <span class="text-uppercase tracking-wider filter-link" data-filter="facial">FACIAL</span>
+                <span class="text-uppercase tracking-wider filter-link" data-filter="corporal">CORPORAL</span>
+                <span class="text-uppercase tracking-wider filter-link" data-filter="medspa">MEDSPA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Grid de Resultados (Antes y Después) -->
+    <section class="pb-5 pb-lg-6 bg-white">
+        <div class="container py-4">
+            <div class="row g-5" id="gallery-grid">
+                
+                <!-- Caso 1 (Facial): Rinoplastia -->
+                <div class="col-lg-6 gallery-item gs-fade-up" data-category="facial">
+                    <div class="d-flex rounded-1 shadow-sm overflow-hidden mb-3" style="gap: 2px;">
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1011/500/600" alt="Rinoplastia - Antes" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                ANTES
+                            </div>
+                        </div>
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1012/500/600" alt="Rinoplastia - Después" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                DESPUÉS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="brand-font fs-5 mb-0 text-dark">Rinoplastia Estructural</h5>
+                        <p class="font-inter small text-muted font-weight-light">Cirugía Facial</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="https://picsum.photos/id/1012/800/1000" alt="Rinoplastia - Armonía Facial"
-                        class="img-fluid w-100 shadow-sm" style="object-fit: cover; aspect-ratio: 4/5;">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Sección 2: Estética y Función -->
-    <section class="py-5 py-lg-6 bg-light" style="background-color: #fbfbfb !important;">
-        <div class="container py-5">
-            <div class="row justify-content-center text-center mb-5 gs-fade-up">
-                <div class="col-lg-8">
-                    <h2 class="display-4 brand-font text-dark mb-2">Belleza que se respira</h2>
-                    <div class="mx-auto mt-4" style="width: 40px; height: 1px; background-color: #333;"></div>
+                <!-- Caso 2 (Corporal): Lipoescultura -->
+                <div class="col-lg-6 gallery-item gs-fade-up" data-category="corporal" style="transition-delay: 0.1s;">
+                    <div class="d-flex rounded-1 shadow-sm overflow-hidden mb-3" style="gap: 2px;">
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1011/500/600" alt="Lipoescultura - Antes" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                ANTES
+                            </div>
+                        </div>
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1012/500/600" alt="Lipoescultura - Después" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                DESPUÉS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="brand-font fs-5 mb-0 text-dark">Lipoescultura</h5>
+                        <p class="font-inter small text-muted font-weight-light">Cirugía Corporal</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row g-5 gs-fade-up">
-                <div class="col-md-6 px-lg-4 text-center text-md-start">
-                    <h4 class="brand-font fs-3 mb-3">Estética Natural</h4>
-                    <p class="font-inter text-muted fw-light leading-relaxed text-sm mb-0">
-                        Rechazamos las narices 'de molde'. Cada procedimiento es un diseño a medida que respeta tu
-                        herencia y tu identidad. Al refinar la punta, suavizar el dorso o ajustar la base, logramos
-                        cambios sutiles que generan un impacto visual profundo y armonioso.
-                    </p>
+                <!-- Caso 3 (Facial): Lifting Facial -->
+                <div class="col-lg-6 gallery-item gs-fade-up" data-category="facial">
+                    <div class="d-flex rounded-1 shadow-sm overflow-hidden mb-3" style="gap: 2px;">
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1011/500/600" alt="Lifting Facial - Antes" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                ANTES
+                            </div>
+                        </div>
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1012/500/600" alt="Lifting Facial - Después" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                DESPUÉS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="brand-font fs-5 mb-0 text-dark">Lifting Facial</h5>
+                        <p class="font-inter small text-muted font-weight-light">Cirugía Facial</p>
+                    </div>
                 </div>
-                <div class="col-md-6 px-lg-4 text-center text-md-start">
-                    <h4 class="brand-font fs-3 mb-3">Excelencia Funcional</h4>
-                    <p class="font-inter text-muted fw-light leading-relaxed text-sm mb-0">
-                        La verdadera perfección médica no sacrifica la función por la forma. El Dr. Salvador domina las
-                        técnicas estructurales que no solo embellecen el perfil, sino que optimizan y protegen tu
-                        capacidad respiratoria, brindándote calidad de vida y bienestar absoluto.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Sección 3: La Experiencia y Recuperación -->
-    <section class="py-5 py-lg-6 bg-white">
-        <div class="container py-5">
-            <div class="row gx-5">
-                <!-- Columna Izquierda (Imagen) -->
-                <div class="col-lg-6 mb-5 mb-lg-0 gs-fade-up">
-                    <img src="images/rinoplastia/rinoplastia-2.webp" alt="Recuperación y Cuidado"
-                        class="img-fluid w-100 h-100 shadow-sm rounded-0" style="object-fit: cover; aspect-ratio: 4/5;">
+                <!-- Caso 4 (Corporal): Aumento de Busto -->
+                <div class="col-lg-6 gallery-item gs-fade-up" data-category="corporal" style="transition-delay: 0.1s;">
+                    <div class="d-flex rounded-1 shadow-sm overflow-hidden mb-3" style="gap: 2px;">
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1011/500/600" alt="Aumento de Busto - Antes" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                ANTES
+                            </div>
+                        </div>
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1012/500/600" alt="Aumento de Busto - Después" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                DESPUÉS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="brand-font fs-5 mb-0 text-dark">Aumento de Busto</h5>
+                        <p class="font-inter small text-muted font-weight-light">Cirugía Corporal</p>
+                    </div>
                 </div>
-                <!-- Columna Derecha (Texto) -->
-                <div class="col-lg-6 d-flex flex-column justify-content-center px-lg-5 text-start gs-fade-up"
-                    style="transition-delay: 0.1s;">
-                    <p class="text-uppercase tracking-wider small text-muted mb-2 font-inter">Acompañamiento Integral
-                    </p>
-                    <h2 class="display-5 mb-4 brand-font text-dark pb-2">Tu Viaje Hacia la Transformación</h2>
-                    <p class="font-inter text-muted fw-light leading-relaxed fs-5 mb-0">
-                        Entendemos que la recuperación es parte fundamental de tu experiencia. Gracias a técnicas
-                        quirúrgicas vanguardistas y menos invasivas, el proceso de desinflamación es considerablemente
-                        más amable y rápido de lo que los pacientes suelen imaginar. Nuestro equipo te acompaña paso a
-                        paso, brindándote cuidados de primer nivel y atención personalizada para que tu evolución sea
-                        tan cómoda y discreta como el resultado mismo.
-                    </p>
+
+                <!-- Caso 5 (Facial): Blefaroplastia -->
+                <div class="col-lg-6 gallery-item gs-fade-up" data-category="facial">
+                    <div class="d-flex rounded-1 shadow-sm overflow-hidden mb-3" style="gap: 2px;">
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1011/500/600" alt="Blefaroplastia - Antes" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                ANTES
+                            </div>
+                        </div>
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1012/500/600" alt="Blefaroplastia - Después" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                DESPUÉS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="brand-font fs-5 mb-0 text-dark">Cirugía de Párpados / Blefaroplastia</h5>
+                        <p class="font-inter small text-muted font-weight-light">Cirugía Facial</p>
+                    </div>
                 </div>
+
+                <!-- Caso 6 (MedSpa): Armonización Facial -->
+                <div class="col-lg-6 gallery-item gs-fade-up" data-category="medspa" style="transition-delay: 0.1s;">
+                    <div class="d-flex rounded-1 shadow-sm overflow-hidden mb-3" style="gap: 2px;">
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1011/500/600" alt="Armonización Facial - Antes" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                ANTES
+                            </div>
+                        </div>
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1012/500/600" alt="Armonización Facial - Después" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small" style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                DESPUÉS
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <h5 class="brand-font fs-5 mb-0 text-dark">Armonización Facial</h5>
+                        <p class="font-inter small text-muted font-weight-light">MedSpa & Medicina Estética</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- Sección CTA -->
-    <section class="py-6" style="background-color: #fafafa;">
+    <section class="py-6 bg-light" style="background-color: #fafafa !important;">
         <div class="container text-center gs-fade-up">
-            <h2 class="display-5 brand-font fst-italic text-dark mb-5 lh-base mx-auto"
+            <h2 class="display-5 brand-font fst-italic text-dark mb-4 lh-base mx-auto"
                 style="max-width: 800px; line-height: 1.4 !important; opacity: 0.9;">
-                "Un perfil elegante no es el que llama la atención, sino el que hace que todo tu rostro sea
-                inolvidable."
+                "Cada rostro y cada cuerpo cuentan una historia única. Permítenos ser parte de tu mejor versión."
             </h2>
-            <a href="#contacto"
-                class="btn btn-dark rounded-0 px-5 py-3 text-uppercase tracking-wider font-inter text-white shadow-sm transition-all"
-                style="letter-spacing: 2px;">SOLICITAR VALORACIÓN</a>
-        </div>
-    </section>
-
-    <!-- Sección Galería de Casos (Antes y Después) -->
-    <section class="py-5 py-lg-6 bg-light" style="background-color: #fbfbfb !important;">
-        <div class="container py-5">
-            <div class="row justify-content-center text-center mb-5 gs-fade-up">
-                <div class="col-lg-8">
-                    <h2 class="display-4 brand-font text-dark mb-2">Galería de Casos</h2>
-                    <p class="font-inter text-muted fw-light leading-relaxed fs-5 mb-0">Transformaciones diseñadas con
-                        absoluta naturalidad.</p>
-                    <div class="mx-auto mt-4" style="width: 40px; height: 1px; background-color: #333;"></div>
-                </div>
-            </div>
-
-            <div class="row g-4 g-lg-5">
-                <!-- Caso 1 -->
-                <div class="col-md-6 gs-fade-up">
-                    <div class="d-flex rounded-1 shadow-sm overflow-hidden" style="gap: 2px;">
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1011/400/500" alt="Antes" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                ANTES
-                            </div>
-                        </div>
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1012/400/500" alt="Después" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                DESPUÉS
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Caso 2 -->
-                <div class="col-md-6 gs-fade-up" style="transition-delay: 0.1s;">
-                    <div class="d-flex rounded-1 shadow-sm overflow-hidden" style="gap: 2px;">
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1011/400/500" alt="Antes" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                ANTES
-                            </div>
-                        </div>
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1012/400/500" alt="Después" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                DESPUÉS
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Caso 3 -->
-                <div class="col-md-6 gs-fade-up">
-                    <div class="d-flex rounded-1 shadow-sm overflow-hidden" style="gap: 2px;">
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1011/400/500" alt="Antes" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                ANTES
-                            </div>
-                        </div>
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1012/400/500" alt="Después" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                DESPUÉS
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Caso 4 -->
-                <div class="col-md-6 gs-fade-up" style="transition-delay: 0.1s;">
-                    <div class="d-flex rounded-1 shadow-sm overflow-hidden" style="gap: 2px;">
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1011/400/500" alt="Antes" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                ANTES
-                            </div>
-                        </div>
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1012/400/500" alt="Después" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                DESPUÉS
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-5 pt-3 gs-fade-up">
-                <a href="galeria.html"
-                    class="btn btn-outline-dark rounded-0 px-4 py-3 text-uppercase font-inter transition-all"
-                    style="letter-spacing: 2px; font-size: 0.85rem;">VER GALERÍA COMPLETA</a>
-            </div>
         </div>
     </section>
 
@@ -469,6 +445,44 @@
 
     <!-- Custom App JS -->
     <script src="js/main.js"></script>
+
+    <!-- Script simple para filtrar galería estáticamente -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterLinks = document.querySelectorAll('.filter-link');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Update active state
+                    filterLinks.forEach(fl => fl.classList.remove('active'));
+                    e.target.classList.add('active');
+
+                    const filter = e.target.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        // Reset opacity & transform for transition
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        
+                        setTimeout(() => {
+                            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                                item.style.display = 'block';
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'translateY(0)';
+                                    // Refresh ScrollTrigger to adjust heights post-filter
+                                    ScrollTrigger.refresh();
+                                }, 50);
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }, 400); // Wait for fade out
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
