@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
 
     <!-- Bootstrap 5 CSS -->
@@ -26,17 +26,17 @@
 
     <!-- Header / Navbar (Clean Beauty Minimal) -->
         <nav class="navbar navbar-expand-lg fixed-top gs-navbar backdrop-blur"
-        style="backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.95); transition: all 0.3s ease; border-bottom: 1px solid rgba(0,0,0,0.05);">
+        style="backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.95); transition: all 0.3s ease; border-bottom: 1px solid rgba(255,255,255,0.05);">
         <style>
             .link-clean {
                 font-family: 'Inter', sans-serif;
                 position: relative;
-                color: #222 !important;
+                color: #fff !important;
                 transition: opacity 0.3s ease;
             }
 
             .link-clean:hover {
-                opacity: 0.6;
+                opacity: 0.7;
             }
 
             .link-clean::after {
@@ -46,7 +46,7 @@
                 height: 1px;
                 bottom: 0;
                 left: 50%;
-                background-color: #222;
+                background-color: #fff;
                 transition: all 0.3s ease;
                 transform: translateX(-50%);
             }
@@ -56,8 +56,8 @@
             }
 
             .navbar-brand-clean {
-                font-family: 'Cormorant Garamond', serif;
-                color: #111 !important;
+                font-family: 'Castoro Titling', serif;
+                color: #fff !important;
                 letter-spacing: 2px;
                 font-weight: 500;
                 font-size: 1.4rem;
@@ -72,8 +72,8 @@
             }
 
             .dropdown-menu-clean {
-                border: none;
-                background-color: #fff;
+                border: 1px solid rgba(255,255,255,0.1);
+                background-color: #111;
                 padding: 0.5rem 0;
             }
 
@@ -82,13 +82,13 @@
                 font-weight: 300;
                 font-size: 0.9rem;
                 padding: 0.5rem 1.5rem;
-                color: #444;
+                color: #ddd;
                 transition: all 0.2s ease;
             }
 
             .dropdown-item-clean:hover, .dropdown-item-clean.active {
-                background-color: #f8f9fa;
-                color: #000;
+                background-color: #222;
+                color: #fff;
             }
 
             .py-6 {
@@ -111,11 +111,11 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-uppercase tracking-wider small link-clean fw-medium"
-                            href="cirugias-faciales.html" id="navbarDropdownFacial" role="button"
+                            href="#" id="navbarDropdownFacial" role="button"
                             aria-expanded="false">FACIAL</a>
                         <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
                             aria-labelledby="navbarDropdownFacial">
-                            <li><a class="dropdown-item dropdown-item-clean active" href="rinoplastia.html">Rinoplastia</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="rinoplastia.html">Rinoplastia</a></li>
                             <li><a class="dropdown-item dropdown-item-clean" href="bichectomia.html">Bichectomía</a></li>
                             <li><a class="dropdown-item dropdown-item-clean" href="blefaroplastia.html">Cirugía de Párpados / Blefaroplastia</a></li>
                             <li><a class="dropdown-item dropdown-item-clean" href="lifting-facial.html">Lifting Facial / Rejuvenecimiento</a></li>
@@ -124,7 +124,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-uppercase tracking-wider small link-clean"
-                            href="cirugias-corporales.html" id="navbarDropdownCorporal" role="button"
+                            href="#" id="navbarDropdownCorporal" role="button"
                             aria-expanded="false">CORPORAL</a>
                         <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
                             aria-labelledby="navbarDropdownCorporal">
@@ -137,7 +137,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link text-uppercase tracking-wider small link-clean" href="no-quirurgicos.html"
+                        <a class="nav-link text-uppercase tracking-wider small link-clean" href="#"
                             id="navbarDropdownMedspa" role="button" aria-expanded="false">MEDSPA</a>
                         <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
                             aria-labelledby="navbarDropdownMedspa">
@@ -147,10 +147,6 @@
                             <li><a class="dropdown-item dropdown-item-clean" href="peeling-quimico.html">Peeling Químico</a></li>
                             <li><a class="dropdown-item dropdown-item-clean" href="hiperhidrosis.html">Tratamiento para Sudoración Excesiva / Hiperhidrosis</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase tracking-wider small link-clean"
-                            href="financiamiento.html">FINANCIAMIENTO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-uppercase tracking-wider small link-clean"
@@ -166,9 +162,9 @@
     </nav>
 
     <!-- Hero Section (Banner Interno) -->
-    <section class="hero-section d-flex align-items-center" style="min-height: 60vh; padding-top: 100px;">
+    <section class="hero-section d-flex align-items-center" style="height: 60vh; min-height: 60vh; padding-top: 100px;">
         <div class="position-absolute w-100 h-100 top-0 start-0"
-            style="background-image: url('https://picsum.photos/id/1011/1920/600'); background-size: cover; background-position: center;">
+            style="background-image: url('images/rinoplastia.jpg'); background-size: cover; background-position: center;">
         </div>
         <div class="overlay" style="background: rgba(0,0,0,0.5);"></div>
         <div class="container position-relative text-center gs-fade-up">
@@ -184,7 +180,7 @@
         <div class="container py-5 gs-fade-up">
             <div class="row align-items-center gx-5">
                 <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5 text-start">
-                    <p class="text-uppercase tracking-wider small text-muted mb-2 font-inter">Filosofía del
+                    <p class="text-uppercase tracking-wider small text-gold mb-2 font-inter">Filosofía del
                         Procedimiento</p>
                     <h2 class="display-5 mb-4 brand-font text-dark pb-2">El Centro de tu Armonía</h2>
                     <div class="font-inter text-muted fw-light leading-relaxed">
@@ -203,8 +199,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://picsum.photos/id/1012/800/1000" alt="Rinoplastia - Armonía Facial"
-                        class="img-fluid w-100 shadow-sm" style="object-fit: cover; aspect-ratio: 4/5;">
+                    <img src="images/rinoplastia/rinoplastia-sec1.webp" alt="Rinoplastia - Armonía Facial" class="img-fluid w-100 shadow-sm" style="object-fit: cover; aspect-ratio: 1/1; border-radius: 0.375rem;">
                 </div>
             </div>
         </div>
@@ -247,13 +242,12 @@
             <div class="row gx-5">
                 <!-- Columna Izquierda (Imagen) -->
                 <div class="col-lg-6 mb-5 mb-lg-0 gs-fade-up">
-                    <img src="images/rinoplastia/rinoplastia-2.webp" alt="Recuperación y Cuidado"
-                        class="img-fluid w-100 h-100 shadow-sm rounded-0" style="object-fit: cover; aspect-ratio: 4/5;">
+                    <img src="images/rinoplastia/rinoplastia-2.webp" alt="Recuperación y Cuidado" class="img-fluid w-100 h-100 shadow-sm " style="object-fit: cover; aspect-ratio: 4/5; border-radius: 0.375rem;">
                 </div>
                 <!-- Columna Derecha (Texto) -->
                 <div class="col-lg-6 d-flex flex-column justify-content-center px-lg-5 text-start gs-fade-up"
                     style="transition-delay: 0.1s;">
-                    <p class="text-uppercase tracking-wider small text-muted mb-2 font-inter">Acompañamiento Integral
+                    <p class="text-uppercase tracking-wider small text-gold mb-2 font-inter">Acompañamiento Integral
                     </p>
                     <h2 class="display-5 mb-4 brand-font text-dark pb-2">Tu Viaje Hacia la Transformación</h2>
                     <p class="font-inter text-muted fw-light leading-relaxed fs-5 mb-0">
@@ -269,7 +263,7 @@
     </section>
 
     <!-- Sección CTA -->
-    <section class="py-6" style="background-color: #fafafa;">
+    <section class="py-6" style="background-color: rgba(243, 229, 216, 0.3);">
         <div class="container text-center gs-fade-up">
             <h2 class="display-5 brand-font fst-italic text-dark mb-5 lh-base mx-auto"
                 style="max-width: 800px; line-height: 1.4 !important; opacity: 0.9;">
@@ -297,18 +291,16 @@
             <div class="row g-4 g-lg-5">
                 <!-- Caso 1 -->
                 <div class="col-md-6 gs-fade-up">
-                    <div class="d-flex rounded-1 shadow-sm overflow-hidden" style="gap: 2px;">
+                    <div class="d-flex rounded-3 shadow-sm overflow-hidden" style="gap: 2px;">
                         <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1011/400/500" alt="Antes" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
+                            <img src="images/rinoplastia/caso01_rinoplastia_antes.webp" alt="Antes" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 1/1; border-radius: 0.375rem;">
                             <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
                                 style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
                                 ANTES
                             </div>
                         </div>
                         <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1012/400/500" alt="Después" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
+                            <img src="images/rinoplastia/caso01_rinoplastia_despues.webp" alt="Después" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 1/1; border-radius: 0.375rem;">
                             <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
                                 style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
                                 DESPUÉS
@@ -319,18 +311,16 @@
 
                 <!-- Caso 2 -->
                 <div class="col-md-6 gs-fade-up" style="transition-delay: 0.1s;">
-                    <div class="d-flex rounded-1 shadow-sm overflow-hidden" style="gap: 2px;">
+                    <div class="d-flex rounded-3 shadow-sm overflow-hidden" style="gap: 2px;">
                         <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1011/400/500" alt="Antes" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
+                            <img src="images/rinoplastia/caso02_rinoplastia_antes.webp" alt="Antes" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 1/1; border-radius: 0.375rem;">
                             <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
                                 style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
                                 ANTES
                             </div>
                         </div>
                         <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1012/400/500" alt="Después" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
+                            <img src="images/rinoplastia/caso02_rinoplastia_despues.webp" alt="Después" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 1/1; border-radius: 0.375rem;">
                             <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
                                 style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
                                 DESPUÉS
@@ -339,49 +329,6 @@
                     </div>
                 </div>
 
-                <!-- Caso 3 -->
-                <div class="col-md-6 gs-fade-up">
-                    <div class="d-flex rounded-1 shadow-sm overflow-hidden" style="gap: 2px;">
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1011/400/500" alt="Antes" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                ANTES
-                            </div>
-                        </div>
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1012/400/500" alt="Después" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                DESPUÉS
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Caso 4 -->
-                <div class="col-md-6 gs-fade-up" style="transition-delay: 0.1s;">
-                    <div class="d-flex rounded-1 shadow-sm overflow-hidden" style="gap: 2px;">
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1011/400/500" alt="Antes" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                ANTES
-                            </div>
-                        </div>
-                        <div class="w-50 position-relative">
-                            <img src="https://picsum.photos/id/1012/400/500" alt="Después" class="img-fluid w-100 h-100"
-                                style="object-fit: cover; aspect-ratio: 4/5;">
-                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
-                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
-                                DESPUÉS
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <div class="text-center mt-5 pt-3 gs-fade-up">
@@ -395,10 +342,14 @@
     <!-- Contact & Footer Section -->
     <section class="contact-section py-5 bg-white" id="contacto">
         <div class="container py-5 gs-fade-up">
-            <div class="row gx-5">
-                <div class="col-lg-5 mb-5 mb-lg-0">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
                     <h2 class="section-title mb-2">¡Queremos resolver todas tus dudas!</h2>
-                    <h4 class="mb-4 text-muted fw-normal">¡Decídete a cambiar tu imagen!</h4>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0 pt-lg-3">
+                    <h4 class="mb-4 text-muted fw-normal text-uppercase tracking-wider" style="font-size: 1.05rem;">¡Decídete a cambiar tu imagen!</h4>
                     <p class="text-muted mb-5 leading-relaxed">
                         ¿Quieres mejorar tu apariencia física y calidad de vida? ¡Estamos para servirte! Solo llena los
                         siguientes campos para asesorarte sobre cuál es el procedimiento de cirugía estética ideal para
@@ -411,40 +362,81 @@
                             Hidalgo #2016-B, Col. Obispado, C.P. 64060,<br>
                             Monterrey, Nuevo León, México
                         </p>
-                        <p class="mb-0 text-muted fw-light">
+                        <p class="mb-3 text-muted fw-light">
                             Teléfonos:<br>
                             <a href="tel:+528114644276" class="text-decoration-none text-dark">+52 (81) 1464-4276</a> |
                             <a href="tel:+528188805455" class="text-decoration-none text-dark">+52 (81) 8880-5455</a> |
                             <a href="tel:+528188805960" class="text-decoration-none text-dark">+52 (81) 8880-5960</a>
                         </p>
+                        <div class="mt-4">
+                            <div class="d-flex gap-3">
+                                <a href="https://www.facebook.com/drsalvadorangelgarciaCirujanoPlastico/photos?locale=es_LA" target="_blank" class="text-dark d-inline-block" style="transition: all 0.3s ease;" onmouseover="this.style.color='#D4AF37'; this.style.transform='scale(1.15)'" onmouseout="this.style.color=''; this.style.transform='scale(1)'">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@centrodebellezacorporal" target="_blank" class="text-dark d-inline-block" style="transition: all 0.3s ease;" onmouseover="this.style.color='#D4AF37'; this.style.transform='scale(1.15)'" onmouseout="this.style.color=''; this.style.transform='scale(1)'">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 offset-lg-1">
                     <form action="contacto.php" method="POST" class="luxury-form">
                         <div class="mb-4 input-group-clean">
-                            <input type="text" class="form-control" id="nombre" name="nombre"
-                                placeholder="Nombre completo" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo" required>
                             <label for="nombre">Nombre completo</label>
                         </div>
                         <div class="mb-4 input-group-clean">
-                            <input type="email" class="form-control" id="correo" name="correo"
-                                placeholder="Correo electrónico" required>
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electrónico" required>
                             <label for="correo">Correo electrónico</label>
                         </div>
                         <div class="mb-4 input-group-clean">
-                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono"
-                                required>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
                             <label for="telefono">Teléfono</label>
                         </div>
-                        <div class="mb-5 input-group-clean">
-                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
-                                placeholder="Mensaje o procedimiento de interés" required></textarea>
-                            <label for="mensaje">Mensaje o procedimiento de interés</label>
+                        
+                        <!-- Nuevo campo: Procedimiento de Interés -->
+                        <div class="mb-4 input-group-clean select-container">
+                            <select class="form-control" id="procedimiento" name="procedimiento" required>
+                                <option value="" disabled selected hidden></option>
+                                <optgroup label="Facial">
+                                    <option value="Rinoplastia">Rinoplastia</option>
+                                    <option value="Bichectomía">Bichectomía</option>
+                                    <option value="Cirugía de Párpados">Cirugía de Párpados / Blefaroplastia</option>
+                                    <option value="Lifting Facial">Lifting Facial / Rejuvenecimiento</option>
+                                    <option value="Mentoplastia">Mentoplastia y Otoplastia</option>
+                                </optgroup>
+                                <optgroup label="Corporal">
+                                    <option value="Aumento de Busto">Aumento de Busto</option>
+                                    <option value="Abdominoplastia">Abdominoplastia / Lipectomia</option>
+                                    <option value="Liposucción">Liposucción / Lipoescultura</option>
+                                    <option value="Levantamiento de Glúteos">Aumento / Levantamiento de Glúteos</option>
+                                    <option value="Post Bariátrica">Cirugía Post-bariátrica</option>
+                                    <option value="Reducción de Busto">Levantamiento / Reducción de Busto</option>
+                                </optgroup>
+                                <optgroup label="MedSpa">
+                                    <option value="Botox">Bótox</option>
+                                    <option value="Rellenos Faciales">Rellenos Faciales</option>
+                                    <option value="PRP">Plasma Rico en Plaquetas / PRP</option>
+                                    <option value="Peeling Químico">Peeling Químico</option>
+                                    <option value="Hiperhidrosis">Tratamiento para Sudoración Excesiva</option>
+                                </optgroup>
+                                <option value="Otro">Otro procedimiento / Aún no lo sé</option>
+                            </select>
+                            <label for="procedimiento">Procedimiento de interés</label>
                         </div>
-                        <button type="submit"
-                            class="btn btn-dark w-100 py-3 rounded-0 text-uppercase tracking-wider">Enviar
-                            Mensaje</button>
+
+                        <div class="mb-5 input-group-clean">
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Mensaje"></textarea>
+                            <label for="mensaje">Mensaje</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-dark w-100 py-3 rounded-0 text-uppercase tracking-wider">Enviar Mensaje</button>
                     </form>
                 </div>
             </div>

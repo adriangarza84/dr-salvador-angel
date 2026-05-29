@@ -14,7 +14,7 @@ Ultra-Luxury Light Theme "Clean Beauty" Styles
   /* Very subtle gold/beige accent if needed */
   --accent-sand: #E5E0D8;
 
-  --font-serif: 'Cormorant Garamond', serif;
+  --font-serif: 'Castoro Titling', serif;
   --font-sans: 'Inter', sans-serif;
 }
 
@@ -60,6 +60,10 @@ p {
 
 .bg-off-white {
   background-color: var(--bg-off-white);
+}
+
+.text-gold {
+  color: #b08933 !important;
 }
 
 /* --- Navbar --- */
@@ -320,6 +324,15 @@ p {
 }
 
 /* Floating label effect */
+.luxury-form input:-webkit-autofill,
+.luxury-form input:-webkit-autofill:hover, 
+.luxury-form input:-webkit-autofill:focus, 
+.luxury-form input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: var(--primary-color) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .luxury-form label {
   position: absolute;
   top: 1rem;
@@ -331,11 +344,21 @@ p {
   font-size: 1rem;
 }
 
-.luxury-form .form-control:focus~label,
-.luxury-form .form-control:not(:placeholder-shown)~label {
+.luxury-form input.form-control:focus~label,
+.luxury-form textarea.form-control:focus~label,
+.luxury-form input.form-control:not(:placeholder-shown)~label,
+.luxury-form textarea.form-control:not(:placeholder-shown)~label {
   top: -10px;
   font-size: 0.75rem;
   color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.luxury-form select.form-control:focus~label,
+.luxury-form select.form-control:valid~label {
+  top: 0;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -468,4 +491,31 @@ p {
     .accordion-panel:last-child {
         border-bottom: none;
     }
+}
+
+.gold-hover-link {
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    padding-right: 20px;
+}
+.gold-hover-link::after {
+    content: '→';
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    font-family: var(--font-sans);
+    color: var(--accent-color);
+    position: absolute;
+    right: 0;
+}
+.gold-hover-link:hover {
+    color: var(--accent-color) !important;
+}
+.gold-hover-link:hover::after {
+    opacity: 1;
+    transform: translateX(0);
 }

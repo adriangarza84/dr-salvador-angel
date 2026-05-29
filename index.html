@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
 
     <!-- Bootstrap 5 CSS -->
@@ -29,17 +29,17 @@
 
     <!-- Header / Navbar (Clean Beauty Minimal) -->
         <nav class="navbar navbar-expand-lg fixed-top gs-navbar backdrop-blur"
-        style="backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.95); transition: all 0.3s ease; border-bottom: 1px solid rgba(0,0,0,0.05);">
+        style="backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.95); transition: all 0.3s ease; border-bottom: 1px solid rgba(255,255,255,0.05);">
         <style>
             .link-clean {
                 font-family: 'Inter', sans-serif;
                 position: relative;
-                color: #222 !important;
+                color: #fff !important;
                 transition: opacity 0.3s ease;
             }
 
             .link-clean:hover {
-                opacity: 0.6;
+                opacity: 0.7;
             }
 
             .link-clean::after {
@@ -49,7 +49,7 @@
                 height: 1px;
                 bottom: 0;
                 left: 50%;
-                background-color: #222;
+                background-color: #fff;
                 transition: all 0.3s ease;
                 transform: translateX(-50%);
             }
@@ -59,8 +59,8 @@
             }
 
             .navbar-brand-clean {
-                font-family: 'Cormorant Garamond', serif;
-                color: #111 !important;
+                font-family: 'Castoro Titling', serif;
+                color: #fff !important;
                 letter-spacing: 2px;
                 font-weight: 500;
                 font-size: 1.4rem;
@@ -75,8 +75,8 @@
             }
 
             .dropdown-menu-clean {
-                border: none;
-                background-color: #fff;
+                border: 1px solid rgba(255,255,255,0.1);
+                background-color: #111;
                 padding: 0.5rem 0;
             }
 
@@ -85,13 +85,13 @@
                 font-weight: 300;
                 font-size: 0.9rem;
                 padding: 0.5rem 1.5rem;
-                color: #444;
+                color: #ddd;
                 transition: all 0.2s ease;
             }
 
             .dropdown-item-clean:hover, .dropdown-item-clean.active {
-                background-color: #f8f9fa;
-                color: #000;
+                background-color: #222;
+                color: #fff;
             }
 
             .py-6 {
@@ -114,7 +114,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-uppercase tracking-wider small link-clean fw-medium"
-                            href="cirugias-faciales.html" id="navbarDropdownFacial" role="button"
+                            href="#" id="navbarDropdownFacial" role="button"
                             aria-expanded="false">FACIAL</a>
                         <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
                             aria-labelledby="navbarDropdownFacial">
@@ -127,7 +127,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link text-uppercase tracking-wider small link-clean"
-                            href="cirugias-corporales.html" id="navbarDropdownCorporal" role="button"
+                            href="#" id="navbarDropdownCorporal" role="button"
                             aria-expanded="false">CORPORAL</a>
                         <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
                             aria-labelledby="navbarDropdownCorporal">
@@ -140,7 +140,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link text-uppercase tracking-wider small link-clean" href="no-quirurgicos.html"
+                        <a class="nav-link text-uppercase tracking-wider small link-clean" href="#"
                             id="navbarDropdownMedspa" role="button" aria-expanded="false">MEDSPA</a>
                         <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
                             aria-labelledby="navbarDropdownMedspa">
@@ -150,10 +150,6 @@
                             <li><a class="dropdown-item dropdown-item-clean" href="peeling-quimico.html">Peeling Químico</a></li>
                             <li><a class="dropdown-item dropdown-item-clean" href="hiperhidrosis.html">Tratamiento para Sudoración Excesiva / Hiperhidrosis</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase tracking-wider small link-clean"
-                            href="financiamiento.html">FINANCIAMIENTO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-uppercase tracking-wider small link-clean"
@@ -186,18 +182,163 @@
     <!-- Doctor Profile Section -->
     <section class="profile-section py-5" id="perfil">
         <div class="container py-5">
-            <div class="row justify-content-center text-center gs-fade-up">
-                <div class="col-lg-8">
+            <div class="row align-items-center gx-5 gs-fade-up">
+                <div class="col-lg-6 mb-5 mb-lg-0 text-start">
                     <h2 class="section-title mb-4">Conoce al Dr. Salvador Ángel García</h2>
-                    <p class="section-text">
+                    <p class="section-text ms-0 mb-0">
                         El Dr. Salvador Ángel García es Doctor en Cirugía Plástica Estética y Reconstructiva, cuenta con
                         una impecable formación académica y una amplia trayectoria y experiencia nacional e
                         internacional. Está certificado por la Asociación Mexicana de Cirugía Plástica Estética y
                         Reconstructiva. (AMCPER) a partir del 2008, y es miembro del Colegio del Noreste de Cirugía
                         Plástica, Estética y Reconstructiva.
                     </p>
+
+                    <!-- Credentials & Badges Grid -->
+                    <div class="row mt-0 mb-2 gs-fade-up g-4 g-lg-5">
+                        <!-- Left Column -->
+                        <div class="col-auto">
+                            <!-- Cédula de Especialidad -->
+                            <div class="mb-4">
+                                <span class="d-block text-muted small text-uppercase tracking-wider mb-1" style="font-family: 'Inter', sans-serif;">Cédula de Especialidad</span>
+                                <span class="d-block fs-5 fw-medium" style="color: #b08933; font-family: 'Inter', sans-serif;">4997503</span>
+                            </div>
+                            <!-- 20+ Años Badge -->
+                            <div class="d-flex align-items-center">
+                                <img src="images/ara-izquierda.png" alt="Laurel Izquierdo" class="laurel-img">
+                                <div class="text-center px-1 px-sm-2 badge-experience-text">
+                                    <span class="years">20+ AÑOS</span>
+                                    <span class="label">EXPERIENCIA</span>
+                                </div>
+                                <img src="images/ara-derecha.png" alt="Laurel Derecho" class="laurel-img">
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="col-auto">
+                            <!-- Certificado CMCPER -->
+                            <div class="mb-4">
+                                <span class="d-block text-muted small text-uppercase tracking-wider mb-1" style="font-family: 'Inter', sans-serif;">Certificado CMCPER</span>
+                                <a href="https://directorio.cmcper.mx/certificado/1308/" target="_blank" class="d-flex align-items-center text-decoration-none fs-5 fw-medium" style="color: #b08933; font-family: 'Inter', sans-serif; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                                    1308 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                </a>
+                            </div>
+                            <!-- Consejo Logo -->
+                            <div class="d-flex align-items-center" style="height: 50px;">
+                                <a href="https://directorio.cmcper.mx/certificado/1308/" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center" style="transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                    <img src="images/consejo-mexicano-de-cirugia-estetica.png" alt="Consejo Mexicano de Cirugía Estética" class="trust-logo" style="opacity: 0.9;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <style>
+                        .trust-badges-row {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            gap: 1.5rem;
+                            margin-top: 2rem;
+                            flex-wrap: nowrap;
+                            width: 100%;
+                        }
+                        .badge-experience-text {
+                            font-family: 'Inter', sans-serif;
+                            color: #222;
+                        }
+                        .badge-experience-text .years {
+                            font-size: 1.25rem;
+                            font-weight: 700;
+                            line-height: 1.1;
+                            display: block;
+                            white-space: nowrap;
+                        }
+                        .badge-experience-text .label {
+                            font-size: 0.65rem;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                            display: block;
+                        }
+                        .trust-logo {
+                            height: 50px;
+                            width: auto;
+                            object-fit: contain;
+                        }
+                        .amcper-logo {
+                            height: 110px;
+                            width: auto;
+                            object-fit: contain;
+                        }
+                        .laurel-img {
+                            height: 50px;
+                            width: auto;
+                        }
+                        
+                        /* Responsive scaling for mobile devices to force single line */
+                        @media (max-width: 991px) {
+                            .trust-badges-row {
+                                justify-content: flex-start;
+                            }
+                        }
+                        @media (max-width: 768px) {
+                            .trust-badges-row {
+                                gap: 0.8rem;
+                            }
+                            .trust-logo, .laurel-img {
+                                height: 35px;
+                            }
+                            .amcper-logo {
+                                height: 75px;
+                            }
+                            .badge-experience-text .years {
+                                font-size: 0.95rem;
+                            }
+                            .badge-experience-text .label {
+                                font-size: 0.5rem;
+                                letter-spacing: 0.5px;
+                            }
+                        }
+                        @media (max-width: 480px) {
+                            .trust-badges-row {
+                                gap: 0.5rem;
+                            }
+                            .trust-logo, .laurel-img {
+                                height: 26px;
+                            }
+                            .amcper-logo {
+                                height: 55px;
+                            }
+                            .badge-experience-text .years {
+                                font-size: 0.75rem;
+                            }
+                            .badge-experience-text .label {
+                                font-size: 0.4rem;
+                                letter-spacing: 0;
+                            }
+                        }
+                    </style>
+
+
+                    <!-- Botón Ver Información -->
+                    <div class="mt-5 gs-fade-up">
+                        <a href="nosotros.html" class="btn btn-outline-dark px-4 py-3 rounded-0 text-uppercase fw-medium" style="font-family: 'Inter', sans-serif; font-size: 0.85rem; letter-spacing: 1.5px; transition: all 0.3s ease;">
+                            Ver información completa
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center">
+                    <div class="position-relative" style="width: 95%;">
+                        <img src="images/perfil-doctor2.jpg" alt="Dr. Salvador Ángel García" class="img-fluid shadow-sm w-100 rounded" style="object-fit: cover; aspect-ratio: 4/5; border-radius: 0.375rem;">
+                        
+                        <!-- Badge Certificado Flotante -->
+                        <img src="images/icon_certificado.png" alt="Cirujano Plástico Certificado" class="position-absolute" style="bottom: 15px; right: 15px; width: 130px; z-index: 10; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15)); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05) rotate(2deg)'" onmouseout="this.style.transform='scale(1) rotate(0deg)'">
+                    </div>
                 </div>
             </div>
+
+
         </div>
     </section>
 
@@ -209,78 +350,34 @@
         <div class="services-accordion gs-fade-up">
             <!-- Panel 1 -->
             <div class="accordion-panel" style="background-image: url('images/aumento-de-busto.webp');">
-                <a href="#contacto" class="panel-link"></a>
+                <a href="aumento-busto.html" class="panel-link"></a>
                 <h3 class="panel-title">AUMENTO DE BUSTO</h3>
             </div>
             <!-- Panel 2 -->
-            <div class="accordion-panel" style="background-image: url('images/liposuccion.png');">
-                <a href="#contacto" class="panel-link"></a>
+            <div class="accordion-panel" style="background-image: url('images/image_lipo.webp');">
+                <a href="liposuccion.html" class="panel-link"></a>
                 <h3 class="panel-title">LIPOSUCCION</h3>
             </div>
             <!-- Panel 3 -->
-            <div class="accordion-panel" style="background-image: url('images/rinoplastia.webp');">
-                <a href="#contacto" class="panel-link"></a>
+            <div class="accordion-panel" style="background-image: url('images/perfil_nariz.webp');">
+                <a href="rinoplastia.html" class="panel-link"></a>
                 <h3 class="panel-title">RINOPLASTIA</h3>
             </div>
             <!-- Panel 4 -->
             <div class="accordion-panel" style="background-image: url('images/abdinoplastia.webp');">
-                <a href="#contacto" class="panel-link"></a>
-                <h3 class="panel-title">ABDINOMPLASTIA</h3>
+                <a href="abdominoplastia.html" class="panel-link"></a>
+                <h3 class="panel-title">ABDOMINOPLASTIA</h3>
             </div>
             <!-- Panel 5 -->
             <div class="accordion-panel" style="background-image: url('images/bichectomia.webp');">
-                <a href="#contacto" class="panel-link"></a>
+                <a href="bichectomia.html" class="panel-link"></a>
                 <h3 class="panel-title">BICHECTOMIA</h3>
             </div>
         </div>
 
-        <div class="container pb-5">
-            <div class="text-center mt-5 gs-fade-up">
-                <p class="mb-3 tracking-wide text-uppercase small">Conoce más sobre nuestros procedimientos:</p>
-                <div class="procedure-links d-flex justify-content-center flex-wrap gap-4">
-                    <a href="bichectomia.html" class="minimal-link">Bichectomía</a>
-                    <a href="abdominosplastia.html" class="minimal-link">Abdominoplastia</a>
-                    <a href="rinoplastia.html" class="minimal-link">Rinoplastia</a>
-                    <a href="liposuccion.html" class="minimal-link">Liposucción</a>
-                </div>
-            </div>
-        </div>
+
     </section>
 
-    <!-- Specific Procedure Section (Aumento de Busto) -->
-    <section class="specific-procedure py-5" id="aumento-busto">
-        <div class="container py-5 gs-fade-up">
-            <div class="row align-items-center gx-5">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <div class="procedure-image-wrapper position-relative">
-                        <!-- Decorative square behind image for luxury feel -->
-                        <div class="decorative-square position-absolute bg-off-white w-100 h-100 top-0 start-0 translate-middle-x ms-2 mt-4"
-                            style="z-index: 1;"></div>
-                        <img src="https://image.shutterstock.com/image-photo/cropped-view-passionate-girl-big-600nw-1695414118.jpg"
-                            alt="Aumento de busto detallado" class="img-fluid position-relative shadow-sm"
-                            style="z-index: 2; object-fit: cover; width: 100%; aspect-ratio: 4/5;">
-                    </div>
-                </div>
-                <div class="col-lg-6 ps-lg-5">
-                    <p class="text-uppercase tracking-wider small text-muted mb-2">Procedimientos Estrella</p>
-                    <h2 class="section-title mb-4" style="padding-bottom: 1rem;">Aumento de Busto</h2>
-                    <p class="section-text ms-0 text-start mb-4">
-                        La cirugía de aumento de busto consiste en agrandar el tamaño del busto (senos) por medio de
-                        prótesis, lo que mejora también el contorno y la figura mamaria, y se realiza de manera
-                        proporcional a la estatura, complexión, y el tamaño de la espalda y la cadera de la paciente.
-                    </p>
-                    <p class="section-text ms-0 text-start mb-4">
-                        Nuestro enfoque es siempre buscar resultados naturales y armoniosos, utilizando los implantes de
-                        la más alta calidad y las técnicas quirúrgicas más avanzadas y seguras para garantizar no solo
-                        el volumen deseado, sino la textura, caída y simetría perfectas.
-                    </p>
-                    <a href="#contacto"
-                        class="btn btn-outline-dark rounded-0 px-4 py-3 text-uppercase tracking-wider mt-2">Agendar
-                        Valoración</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Procedimientos No Quirúrgicos Section -->
     <section id="no-quirurgicos" class="py-5 py-lg-6 bg-white">
@@ -295,22 +392,28 @@
                         el tiempo de recuperación de forma segura y eficaz.
                     </p>
                     <ul class="list-unstyled mb-2">
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Toxina Botulínica</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Rellenos Faciales</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Plasma Rico en
-                            Plaquetas</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Peeling Químico</li>
-                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">Sudoración Excesiva
-                            (Hiperhidrosis)</li>
+                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">
+                            <a href="botox.html" class="text-decoration-none gold-hover-link d-block">Toxina Botulínica</a>
+                        </li>
+                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">
+                            <a href="rellenos-faciales.html" class="text-decoration-none gold-hover-link d-block">Rellenos Faciales</a>
+                        </li>
+                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">
+                            <a href="prp.html" class="text-decoration-none gold-hover-link d-block">Plasma Rico en Plaquetas</a>
+                        </li>
+                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">
+                            <a href="peeling-quimico.html" class="text-decoration-none gold-hover-link d-block">Peeling Químico</a>
+                        </li>
+                        <li class="py-2 border-bottom" style="border-color: #ededed !important;">
+                            <a href="hiperhidrosis.html" class="text-decoration-none gold-hover-link d-block">Sudoración Excesiva (Hiperhidrosis)</a>
+                        </li>
                     </ul>
-                    <a href="procedimientos-no-quirurgicos.html"
-                        class="btn btn-dark rounded-0 text-uppercase tracking-wider mt-4">Ver todos los tratamientos</a>
                 </div>
 
                 <!-- Columna Derecha (Imagen) -->
                 <div class="col-lg-6">
-                    <img src="images/procedimientos-no-quirurgicos.png" alt="Procedimientos no quirúrgicos"
-                        class="img-fluid w-100 shadow-sm" style="object-fit: cover; aspect-ratio: 4/5;">
+                    <img src="images/procedimientos_no_quirurgicos.webp" alt="Procedimientos no quirúrgicos"
+                        class="img-fluid w-100 shadow-sm rounded" style="object-fit: cover; aspect-ratio: 4/5; border-radius: 0.375rem;">
                 </div>
             </div>
         </div>
@@ -327,61 +430,51 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section" id="testimoniales">
-        <div class="container-fluid p-0">
-            <div class="row g-0 align-items-center">
-                <!-- Left Image Cover -->
-                <div class="col-lg-6">
-                    <div class="testimonial-img-wrapper gs-fade-up h-100">
-                        <img src="images/perfil-doctor.jpg" alt="Doctor en consultorio" class="img-fluid w-100"
-                            style="object-fit: cover; min-height: 600px; height: 100%; max-height: 800px;">
-                    </div>
-                </div>
-                <!-- Right Content -->
-                <div class="col-lg-6 bg-white">
-                    <div class="testimonial-content-wrapper p-5 p-lg-5 mx-lg-5 gs-fade-up">
-                        <p class="text-uppercase tracking-wider small text-muted mb-2 fw-semibold">Lo que dicen nuestros
+    <section class="testimonials-section py-5 position-relative" id="testimoniales" style="background-image: url('images/bg_caras.webp'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <!-- Dark Overlay -->
+        <div class="position-absolute w-100 h-100 top-0 start-0" style="background-color: rgba(0, 0, 0, 0.85); z-index: 1;"></div>
+        
+        <div class="container py-5 position-relative" style="z-index: 2;">
+            <div class="row justify-content-center">
+                <!-- Center Content -->
+                <div class="col-lg-8 bg-white text-center rounded shadow-lg">
+                    <div class="testimonial-content-wrapper p-4 p-lg-5 gs-fade-up">
+                        <p class="text-uppercase tracking-wider small text-gold mb-2 fw-semibold">Lo que dicen nuestros
                             pacientes</p>
                         <h2 class="display-3 brand-font text-uppercase mb-5 text-dark" style="letter-spacing: 2px;">
                             Testimoniales</h2>
 
                         <!-- Testimonials Swiper -->
-                        <div class="swiper testimonials-swiper mb-5">
+                        <div class="swiper testimonials-swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide pe-4">
+                                <div class="swiper-slide px-2 px-md-4">
                                     <p class="fs-5 fst-italic text-dark mb-4 leading-relaxed" style="opacity: 0.85;">
-                                        "Me siento muy afortunada de haber encontrado al Dr. Salvador... es un diamante
-                                        en bruto, un cirujano excepcional."
+                                        "Desde que llegué todos fueron muy amables, atentos y puntuales. El anestesiólogo, el doctor Salvador Ángel García y todo su equipo de trabajo te atienden increíble te dan toda la atención y son muy atentos. Aunque aún falta para ver los resultados finales quedo encantados con lo que puedo apreciar por ahora. Me hice lipo, lipoinyeccion y aumento de busto. Sin duda alguna, volvería a este lugar si en algún momento desde otra cirugía."
                                     </p>
-                                    <p class="text-uppercase fw-bold small text-dark tracking-wide mt-4">— Paciente
-                                        Satisfecha</p>
+                                    <div class="mb-2 mt-4" style="color: #D4AF37; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="text-uppercase fw-bold small text-dark tracking-wide">— Esmeralda Villarreal</p>
                                 </div>
-                                <div class="swiper-slide pe-4">
+                                <div class="swiper-slide px-2 px-md-4">
                                     <p class="fs-5 fst-italic text-dark mb-4 leading-relaxed" style="opacity: 0.85;">
-                                        "El cambio en mi calidad de vida ha sido increíble. Gracias al doctor y a todo
-                                        su equipo por su gran atención."
+                                        "Tengo 6 meses de mi cirujia. Fue implante de pechos, tummy tuck, lipo. El mejor dr encantada con mis resultados y muy natural. Excelentes enfermeras y tanto como el dr, el anestesiologo y su equipo explican paso a paso. Encantada y pronto regreso a mas. Buenas manos"
                                     </p>
-                                    <p class="text-uppercase fw-bold small text-dark tracking-wide mt-4">— Paciente
-                                        Satisfecha</p>
+                                    <div class="mb-2 mt-4" style="color: #D4AF37; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="text-uppercase fw-bold small text-dark tracking-wide">— Elsa Duran</p>
                                 </div>
-                                <div class="swiper-slide pe-4">
+                                <div class="swiper-slide px-2 px-md-4">
                                     <p class="fs-5 fst-italic text-dark mb-4 leading-relaxed" style="opacity: 0.85;">
-                                        "Excelente atención desde la primera consulta, resolvió todas mis dudas y el
-                                        resultado final superó mis expectativas."
+                                        "Resultados preciosos y naturales. ¡Perfecto!"
                                     </p>
-                                    <p class="text-uppercase fw-bold small text-dark tracking-wide mt-4">— Paciente
-                                        Satisfecha</p>
+                                    <div class="mb-2 mt-4" style="color: #D4AF37; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="text-uppercase fw-bold small text-dark tracking-wide">— Christine M</p>
                                 </div>
                             </div>
                             <!-- Swiper Pagination -->
                             <div
-                                class="swiper-pagination testimonials-pagination mt-5 position-static d-flex justify-content-start align-items-center gap-2">
+                                class="swiper-pagination testimonials-pagination mt-5 position-static d-flex justify-content-center align-items-center gap-2">
                             </div>
                         </div>
 
-                        <a href="#contacto"
-                            class="btn btn-dark rounded-0 px-5 py-3 text-uppercase tracking-wider border-0 shadow-sm mt-3"
-                            style="background-color: #000; font-size: 0.8rem;">Ver Todos</a>
                     </div>
                 </div>
             </div>
@@ -391,10 +484,14 @@
     <!-- Contact & Footer Section -->
     <section class="contact-section py-5" id="contacto">
         <div class="container py-5 gs-fade-up">
-            <div class="row gx-5">
-                <div class="col-lg-5 mb-5 mb-lg-0">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
                     <h2 class="section-title mb-2">¡Queremos resolver todas tus dudas!</h2>
-                    <h4 class="mb-4 text-muted fw-normal">¡Decídete a cambiar tu imagen!</h4>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0 pt-lg-3">
+                    <h4 class="mb-4 text-muted fw-normal text-uppercase tracking-wider" style="font-size: 1.05rem;">¡Decídete a cambiar tu imagen!</h4>
                     <p class="text-muted mb-5 leading-relaxed">
                         ¿Quieres mejorar tu apariencia física y calidad de vida? ¡Estamos para servirte! Solo llena los
                         siguientes campos para asesorarte sobre cuál es el procedimiento de cirugía estética ideal para
@@ -407,40 +504,81 @@
                             Hidalgo #2016-B, Col. Obispado, C.P. 64060,<br>
                             Monterrey, Nuevo León, México
                         </p>
-                        <p class="mb-0 text-muted fw-light">
+                        <p class="mb-3 text-muted fw-light">
                             Teléfonos:<br>
                             <a href="tel:+528114644276" class="text-decoration-none text-dark">+52 (81) 1464-4276</a> |
                             <a href="tel:+528188805455" class="text-decoration-none text-dark">+52 (81) 8880-5455</a> |
                             <a href="tel:+528188805960" class="text-decoration-none text-dark">+52 (81) 8880-5960</a>
                         </p>
+                        <div class="mt-4">
+                            <div class="d-flex gap-3">
+                                <a href="https://www.facebook.com/drsalvadorangelgarciaCirujanoPlastico/photos?locale=es_LA" target="_blank" class="text-dark d-inline-block" style="transition: all 0.3s ease;" onmouseover="this.style.color='#D4AF37'; this.style.transform='scale(1.15)'" onmouseout="this.style.color=''; this.style.transform='scale(1)'">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@centrodebellezacorporal" target="_blank" class="text-dark d-inline-block" style="transition: all 0.3s ease;" onmouseover="this.style.color='#D4AF37'; this.style.transform='scale(1.15)'" onmouseout="this.style.color=''; this.style.transform='scale(1)'">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6 offset-lg-1">
                     <form action="contacto.php" method="POST" class="luxury-form">
                         <div class="mb-4 input-group-clean">
-                            <input type="text" class="form-control" id="nombre" name="nombre"
-                                placeholder="Nombre completo" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo" required>
                             <label for="nombre">Nombre completo</label>
                         </div>
                         <div class="mb-4 input-group-clean">
-                            <input type="email" class="form-control" id="correo" name="correo"
-                                placeholder="Correo electrónico" required>
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electrónico" required>
                             <label for="correo">Correo electrónico</label>
                         </div>
                         <div class="mb-4 input-group-clean">
-                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono"
-                                required>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
                             <label for="telefono">Teléfono</label>
                         </div>
-                        <div class="mb-5 input-group-clean">
-                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3"
-                                placeholder="Mensaje o procedimiento de interés" required></textarea>
-                            <label for="mensaje">Mensaje o procedimiento de interés</label>
+                        
+                        <!-- Nuevo campo: Procedimiento de Interés -->
+                        <div class="mb-4 input-group-clean select-container">
+                            <select class="form-control" id="procedimiento" name="procedimiento" required>
+                                <option value="" disabled selected hidden></option>
+                                <optgroup label="Facial">
+                                    <option value="Rinoplastia">Rinoplastia</option>
+                                    <option value="Bichectomía">Bichectomía</option>
+                                    <option value="Cirugía de Párpados">Cirugía de Párpados / Blefaroplastia</option>
+                                    <option value="Lifting Facial">Lifting Facial / Rejuvenecimiento</option>
+                                    <option value="Mentoplastia">Mentoplastia y Otoplastia</option>
+                                </optgroup>
+                                <optgroup label="Corporal">
+                                    <option value="Aumento de Busto">Aumento de Busto</option>
+                                    <option value="Abdominoplastia">Abdominoplastia / Lipectomia</option>
+                                    <option value="Liposucción">Liposucción / Lipoescultura</option>
+                                    <option value="Levantamiento de Glúteos">Aumento / Levantamiento de Glúteos</option>
+                                    <option value="Post Bariátrica">Cirugía Post-bariátrica</option>
+                                    <option value="Reducción de Busto">Levantamiento / Reducción de Busto</option>
+                                </optgroup>
+                                <optgroup label="MedSpa">
+                                    <option value="Botox">Bótox</option>
+                                    <option value="Rellenos Faciales">Rellenos Faciales</option>
+                                    <option value="PRP">Plasma Rico en Plaquetas / PRP</option>
+                                    <option value="Peeling Químico">Peeling Químico</option>
+                                    <option value="Hiperhidrosis">Tratamiento para Sudoración Excesiva</option>
+                                </optgroup>
+                                <option value="Otro">Otro procedimiento / Aún no lo sé</option>
+                            </select>
+                            <label for="procedimiento">Procedimiento de interés</label>
                         </div>
-                        <button type="submit"
-                            class="btn btn-dark w-100 py-3 rounded-0 text-uppercase tracking-wider">Enviar
-                            Mensaje</button>
+
+                        <div class="mb-5 input-group-clean">
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Mensaje"></textarea>
+                            <label for="mensaje">Mensaje</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-dark w-100 py-3 rounded-0 text-uppercase tracking-wider">Enviar Mensaje</button>
                     </form>
                 </div>
             </div>

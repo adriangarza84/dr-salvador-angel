@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plasma Rico en Plaquetas / PRP | Dr. Salvador Ángel García | Cirugía Plástica Estética</title>
+    <!-- Fonts: Cormorant Garamond & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lenis CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar (Clean Beauty Minimal) -->
+    <nav class="navbar navbar-expand-lg fixed-top gs-navbar backdrop-blur"
+        style="backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.95); transition: all 0.3s ease; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <style>
+            .link-clean {
+                font-family: 'Inter', sans-serif;
+                position: relative;
+                color: #fff !important;
+                transition: opacity 0.3s ease;
+            }
+
+            .link-clean:hover {
+                opacity: 0.7;
+            }
+
+            .link-clean::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 1px;
+                bottom: 0;
+                left: 50%;
+                background-color: #fff;
+                transition: all 0.3s ease;
+                transform: translateX(-50%);
+            }
+
+            .link-clean:hover::after {
+                width: 100%;
+            }
+
+            .navbar-brand-clean {
+                font-family: 'Castoro Titling', serif;
+                color: #fff !important;
+                letter-spacing: 2px;
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+
+            /* Dropdown Hover for Desktop */
+            @media (min-width: 992px) {
+                .nav-item.dropdown:hover .dropdown-menu {
+                    display: block;
+                    margin-top: 0;
+                }
+            }
+
+            .dropdown-menu-clean {
+                border: 1px solid rgba(255,255,255,0.1);
+                background-color: #111;
+                padding: 0.5rem 0;
+            }
+
+            .dropdown-item-clean {
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+                font-size: 0.9rem;
+                padding: 0.5rem 1.5rem;
+                color: #ddd;
+                transition: all 0.2s ease;
+            }
+
+            .dropdown-item-clean:hover, .dropdown-item-clean.active {
+                background-color: #222;
+                color: #fff;
+            }
+
+            .py-6 {
+                padding-top: 6rem !important;
+                padding-bottom: 6rem !important;
+            }
+        </style>
+        <div class="container py-2">
+            <a class="navbar-brand text-uppercase navbar-brand-clean" href="index.html">DR. SALVADOR ÁNGEL</a>
+            <button class="navbar-toggler border-0 shadow-none px-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: invert(1); opacity: 0.7;"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3 gap-lg-4 mt-3 mt-lg-0 text-center text-lg-start align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase tracking-wider small link-clean" href="nosotros.html">EL
+                            DOCTOR</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase tracking-wider small link-clean fw-medium"
+                            href="#" id="navbarDropdownFacial" role="button"
+                            aria-expanded="false">FACIAL</a>
+                        <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
+                            aria-labelledby="navbarDropdownFacial">
+                            <li><a class="dropdown-item dropdown-item-clean" href="rinoplastia.html">Rinoplastia</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="bichectomia.html">Bichectomía</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="blefaroplastia.html">Cirugía de Párpados / Blefaroplastia</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="lifting-facial.html">Lifting Facial / Rejuvenecimiento</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="mentoplastia.html">Mentoplastia y Otoplastia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase tracking-wider small link-clean"
+                            href="#" id="navbarDropdownCorporal" role="button"
+                            aria-expanded="false">CORPORAL</a>
+                        <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
+                            aria-labelledby="navbarDropdownCorporal">
+                            <li><a class="dropdown-item dropdown-item-clean" href="aumento-busto.html">Aumento de Busto</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="abdominoplastia.html">Abdominoplastia / Lipectomia</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="liposuccion.html">Liposucción / Lipoescultura</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="levantamiento-de-gluteos.html">Aumento / Levantamiento de Glúteos</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="post-bariatrica.html">Cirugía Post-bariátrica</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="reduccion-de-busto.html">Levantamiento / Reducción de Busto</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase tracking-wider small link-clean" href="#"
+                            id="navbarDropdownMedspa" role="button" aria-expanded="false">MEDSPA</a>
+                        <ul class="dropdown-menu dropdown-menu-clean shadow-sm rounded-0"
+                            aria-labelledby="navbarDropdownMedspa">
+                            <li><a class="dropdown-item dropdown-item-clean" href="botox.html">Bótox</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="rellenos-faciales.html">Rellenos Faciales</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="prp.html">Plasma Rico en Plaquetas / PRP</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="peeling-quimico.html">Peeling Químico</a></li>
+                            <li><a class="dropdown-item dropdown-item-clean" href="hiperhidrosis.html">Tratamiento para Sudoración Excesiva / Hiperhidrosis</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase tracking-wider small link-clean"
+                            href="galeria.html">GALERÍA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase tracking-wider small link-clean"
+                            href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Banner Interno) -->
+    <section class="hero-section d-flex align-items-center" style="height: 60vh; min-height: 60vh; padding-top: 100px;">
+        <div class="position-absolute w-100 h-100 top-0 start-0"
+            style="background-image: url('images/prp/prp_hero.webp'); background-size: cover; background-position: center;">
+        </div>
+        <div class="overlay" style="background: rgba(0,0,0,0.5);"></div>
+        <div class="container position-relative text-center gs-fade-up">
+            <h1 class="display-2 mb-3 text-white brand-font">Plasma Rico en Plaquetas / PRP</h1>
+            <p class="lead text-white mx-auto fw-light" style="max-width: 700px; font-family: 'Inter', sans-serif;">
+                Despierta la juventud celular desde adentro. Nutrición pura y bioestimulación que devuelven la firmeza y luminosidad perdidas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección 1: Filosofía del Tratamiento (Split Layout) -->
+    <section class="py-5 py-lg-6 bg-white">
+        <div class="container py-5 gs-fade-up">
+            <div class="row align-items-center gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5 text-start">
+                    <p class="text-uppercase tracking-wider small text-gold mb-2 font-inter">Filosofía del Tratamiento</p>
+                    <h2 class="display-5 mb-4 brand-font text-dark pb-2">Regeneración desde el Interior</h2>
+                    <div class="font-inter text-muted fw-light leading-relaxed">
+                        <p class="mb-4 text-sm">
+                            La clave para una piel verdaderamente sana y joven radica en su capacidad de regeneración celular.
+                        </p>
+                        <p class="mb-0 text-sm">
+                            El Plasma Rico en Plaquetas (PRP) es una terapia de bioestimulación natural que utiliza los factores de crecimiento presentes en tu propia sangre para reparar tejidos dañados, estimular la producción de colágeno y elastina, y frenar el proceso de envejecimiento. Es el tratamiento ideal para quienes buscan una belleza genuina, segura y 100% natural.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/prp/prp_rostro.webp" alt="PRP - Regeneración desde el Interior" class="img-fluid w-100 shadow-sm" style="object-fit: cover; aspect-ratio: 1/1; border-radius: 0.375rem;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Estética y Precisión -->
+    <section class="py-5 py-lg-6 bg-light" style="background-color: #fbfbfb !important;">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5 gs-fade-up">
+                <div class="col-lg-8">
+                    <h2 class="display-4 brand-font text-dark mb-2">Prevención y Elegancia</h2>
+                    <div class="mx-auto mt-4" style="width: 40px; height: 1px; background-color: #333;"></div>
+                </div>
+            </div>
+
+            <div class="row g-5 gs-fade-up">
+                <div class="col-md-6 px-lg-4 text-center text-md-start">
+                    <h4 class="brand-font fs-3 mb-3">Bioestimulación Celular</h4>
+                    <p class="font-inter text-muted fw-light leading-relaxed text-sm mb-0">
+                        El PRP actúa como un elixir de juventud para tu piel. Al inyectar el plasma activado, se desencadena una cascada de regeneración celular que mejora la textura de la piel, atenúa cicatrices, cierra poros dilatados e ilumina el rostro apagado. Es nutrición profunda y revitalización en estado puro.
+                    </p>
+                </div>
+                <div class="col-md-6 px-lg-4 text-center text-md-start">
+                    <h4 class="brand-font fs-3 mb-3">Un Procedimiento 100% Autólogo</h4>
+                    <p class="font-inter text-muted fw-light leading-relaxed text-sm mb-0">
+                        Debido a que el plasma se obtiene de tu propia sangre mediante una sencilla extracción y centrifugado en la misma sesión, el PRP es completamente biocompatible. No existe riesgo de alergias o rechazo, lo que lo convierte en uno de los tratamientos antienvejecimiento más seguros y confiables del mundo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: La Experiencia -->
+    <section class="py-5 py-lg-6 bg-white">
+        <div class="container py-5">
+            <div class="row gx-5">
+                <!-- Columna Izquierda (Imagen) -->
+                <div class="col-lg-6 mb-5 mb-lg-0 gs-fade-up">
+                    <img src="images/prp/prp_aplicacion.webp" alt="La Experiencia del PRP" class="img-fluid w-100 h-100 shadow-sm " style="object-fit: cover; aspect-ratio: 1/1; border-radius: 0.375rem;">
+                </div>
+                <!-- Columna Derecha (Texto) -->
+                <div class="col-lg-6 d-flex flex-column justify-content-center px-lg-5 text-start gs-fade-up"
+                    style="transition-delay: 0.1s;">
+                    <p class="text-uppercase tracking-wider small text-gold mb-2 font-inter">Cuidado Integral</p>
+                    <h2 class="display-5 mb-4 brand-font text-dark pb-2">Juventud y Luminosidad</h2>
+                    <p class="font-inter text-muted fw-light leading-relaxed fs-5 mb-0">
+                        El tratamiento dura aproximadamente 45 minutos. Tras la preparación del plasma, se aplica mediante microinyecciones indoloras en las zonas a tratar. Aunque verás una mejoría inmediata en la luminosidad de la piel, el verdadero milagro ocurre a partir de las 3 o 4 semanas, cuando la síntesis de nuevo colágeno brinda una piel más firme y tersa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección CTA -->
+    <section class="py-6" style="background-color: rgba(243, 229, 216, 0.3);">
+        <div class="container text-center gs-fade-up">
+            <h2 class="display-5 brand-font fst-italic text-dark mb-5 lh-base mx-auto"
+                style="max-width: 800px; line-height: 1.4 !important; opacity: 0.9;">
+                "Despierta la juventud celular desde adentro y revela el brillo natural y radiante de tu piel."
+            </h2>
+            <a href="#contacto"
+                class="btn btn-dark rounded-0 px-5 py-3 text-uppercase tracking-wider font-inter text-white shadow-sm transition-all"
+                style="letter-spacing: 2px;">AGENDAR VALORACIÓN</a>
+        </div>
+    </section>
+
+    <!-- Sección Galería de Casos (Antes y Después) -->
+    <section class="py-5 py-lg-6 bg-light" style="background-color: #fbfbfb !important;">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5 gs-fade-up">
+                <div class="col-lg-8">
+                    <h2 class="display-4 brand-font text-dark mb-2">Galería de Casos</h2>
+                    <p class="font-inter text-muted fw-light leading-relaxed fs-5 mb-0">Transformaciones reales y sutiles diseñadas con naturalidad.</p>
+                    <div class="mx-auto mt-4" style="width: 40px; height: 1px; background-color: #333;"></div>
+                </div>
+            </div>
+
+            <div class="row g-4 g-lg-5">
+                <!-- Caso 1 -->
+                <div class="col-md-6 gs-fade-up">
+                    <div class="d-flex rounded-3 shadow-sm overflow-hidden" style="gap: 2px;">
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1011/400/500" alt="Antes" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5; border-radius: 0.375rem;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
+                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                ANTES
+                            </div>
+                        </div>
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1012/400/500" alt="Después" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5; border-radius: 0.375rem;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
+                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                DESPUÉS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso 2 -->
+                <div class="col-md-6 gs-fade-up" style="transition-delay: 0.1s;">
+                    <div class="d-flex rounded-3 shadow-sm overflow-hidden" style="gap: 2px;">
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1011/400/500" alt="Antes" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5; border-radius: 0.375rem;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
+                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                ANTES
+                            </div>
+                        </div>
+                        <div class="w-50 position-relative">
+                            <img src="https://picsum.photos/id/1012/400/500" alt="Después" class="img-fluid w-100 h-100" style="object-fit: cover; aspect-ratio: 4/5; border-radius: 0.375rem;">
+                            <div class="position-absolute bottom-0 start-0 m-2 px-2 py-1 text-white small"
+                                style="background-color: rgba(0,0,0,0.6); font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 1px;">
+                                DESPUÉS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5 pt-3 gs-fade-up">
+                <a href="galeria.html"
+                    class="btn btn-outline-dark rounded-0 px-4 py-2 text-uppercase font-inter transition-all tracking-wider"
+                    style="letter-spacing: 2px; font-size: 0.85rem;">VER GALERÍA COMPLETA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section class="contact-section py-5 bg-white" id="contacto">
+        <div class="container py-5 gs-fade-up">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="section-title mb-2">¡Queremos resolver todas tus dudas!</h2>
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0 pt-lg-3">
+                    <h4 class="mb-4 text-muted fw-normal text-uppercase tracking-wider" style="font-size: 1.05rem;">¡Decídete a cambiar tu imagen!</h4>
+                    <p class="text-muted mb-5 leading-relaxed">
+                        ¿Quieres mejorar tu apariencia física y calidad de vida? ¡Estamos para servirte! Solo llena los
+                        siguientes campos para asesorarte sobre cuál es el procedimiento de cirugía estética ideal para
+                        ti y concretar un plan de cotización que vaya de acuerdo a tus necesidades.
+                    </p>
+
+                    <div class="contact-info mt-5">
+                        <h5 class="text-uppercase tracking-wide mb-3 fs-6">Ponte en contacto con nosotros.</h5>
+                        <p class="mb-2 text-muted fw-light">
+                            Hidalgo #2016-B, Col. Obispado, C.P. 64060,<br>
+                            Monterrey, Nuevo León, México
+                        </p>
+                        <p class="mb-3 text-muted fw-light">
+                            Teléfonos:<br>
+                            <a href="tel:+528114644276" class="text-decoration-none text-dark">+52 (81) 1464-4276</a> |
+                            <a href="tel:+528188805455" class="text-decoration-none text-dark">+52 (81) 8880-5455</a> |
+                            <a href="tel:+528188805960" class="text-decoration-none text-dark">+52 (81) 8880-5960</a>
+                        </p>
+                        <div class="mt-4">
+                            <div class="d-flex gap-3">
+                                <a href="https://www.facebook.com/drsalvadorangelgarciaCirujanoPlastico/photos?locale=es_LA" target="_blank" class="text-dark d-inline-block" style="transition: all 0.3s ease;" onmouseover="this.style.color='#D4AF37'; this.style.transform='scale(1.15)'" onmouseout="this.style.color=''; this.style.transform='scale(1)'">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@centrodebellezacorporal" target="_blank" class="text-dark d-inline-block" style="transition: all 0.3s ease;" onmouseover="this.style.color='#D4AF37'; this.style.transform='scale(1.15)'" onmouseout="this.style.color=''; this.style.transform='scale(1)'">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 offset-lg-1">
+                    <form action="contacto.php" method="POST" class="luxury-form">
+                        <div class="mb-4 input-group-clean">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                            <label for="nombre">Nombre completo</label>
+                        </div>
+                        <div class="mb-4 input-group-clean">
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electrónico" required>
+                            <label for="correo">Correo electrónico</label>
+                        </div>
+                        <div class="mb-4 input-group-clean">
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
+                            <label for="telefono">Teléfono</label>
+                        </div>
+                        
+                        <!-- Nuevo campo: Procedimiento de Interés -->
+                        <div class="mb-4 input-group-clean select-container">
+                            <select class="form-control" id="procedimiento" name="procedimiento" required>
+                                <option value="" disabled selected hidden></option>
+                                <optgroup label="Facial">
+                                    <option value="Rinoplastia">Rinoplastia</option>
+                                    <option value="Bichectomía">Bichectomía</option>
+                                    <option value="Cirugía de Párpados">Cirugía de Párpados / Blefaroplastia</option>
+                                    <option value="Lifting Facial">Lifting Facial / Rejuvenecimiento</option>
+                                    <option value="Mentoplastia">Mentoplastia y Otoplastia</option>
+                                </optgroup>
+                                <optgroup label="Corporal">
+                                    <option value="Aumento de Busto">Aumento de Busto</option>
+                                    <option value="Abdominoplastia">Abdominoplastia / Lipectomia</option>
+                                    <option value="Liposucción">Liposucción / Lipoescultura</option>
+                                    <option value="Levantamiento de Glúteos">Aumento / Levantamiento de Glúteos</option>
+                                    <option value="Post Bariátrica">Cirugía Post-bariátrica</option>
+                                    <option value="Reducción de Busto">Levantamiento / Reducción de Busto</option>
+                                </optgroup>
+                                <optgroup label="MedSpa">
+                                    <option value="Botox">Bótox</option>
+                                    <option value="Rellenos Faciales">Rellenos Faciales</option>
+                                    <option value="PRP">Plasma Rico en Plaquetas / PRP</option>
+                                    <option value="Peeling Químico">Peeling Químico</option>
+                                    <option value="Hiperhidrosis">Tratamiento para Sudoración Excesiva</option>
+                                </optgroup>
+                                <option value="Otro">Otro procedimiento / Aún no lo sé</option>
+                            </select>
+                            <label for="procedimiento">Procedimiento de interés</label>
+                        </div>
+
+                        <div class="mb-5 input-group-clean">
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Mensaje"></textarea>
+                            <label for="mensaje">Mensaje</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-dark w-100 py-3 rounded-0 text-uppercase tracking-wider">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0 small fw-light tracking-wide">&copy; 2026 Dr. Salvador Ángel García. Todos los derechos
+            reservados.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Lenis for Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+
+    <!-- Custom App JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
